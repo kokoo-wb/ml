@@ -1,0 +1,42 @@
+{
+    "name": "ml",
+    "version": "1.0.0",
+    "description": "米罗",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kokoo-wb/ml.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kokoo-wb/ml/issues"
+    },
+    "homepage": "https://github.com/kokoo-wb/ml#readme",
+    "dependencies": {
+        "autoprefixer": "^9.1.2",
+        "css-loader": "^1.0.0",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "globby": "^8.0.1",
+        "html-webpack-plugin": "^3.2.0",
+        "less": "^3.8.1",
+        "less-loader": "^4.1.0",
+        "path": "^0.12.7",
+        "postcss-loader": "^3.0.0",
+        "webpack": "^4.17.0",
+        "webpack-cli": "^3.1.0"
+    },
+    "browserslist": [
+        "Firefox > 20",
+        "iOS >= 7",
+        "ie >= 8",
+        "last 5 versions",
+        "> 5%"
+    ]
+}
