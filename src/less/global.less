@@ -1,0 +1,189 @@
+/* *
+* iTouch App webview common css
+* author: zhuhuishao
+* 主要功能: 实现全局通用样式抽取
+* */
+
+@charset "utf-8";
+html,
+body {
+    height: 100%;
+    font-family: 'PingFang SC', 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+    -webkit-overflow-scrolling: touch;
+    color: #333;
+    -webkit-tap-highlight-color: transparent;
+    font-weight: normal;
+    background: #fff;
+    word-wrap: break-word;
+    word-break: normal;
+    font-size: 0.3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+}
+
+input,
+button,
+textarea {
+    font-family: 'PingFang SC', 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+    -webkit-appearance: none;
+}
+
+
+/* * 去除滚动条 * */
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+::-webkit-search-cancel-button {
+    display: none;
+}
+
+::-webkit-input-placeholder {
+    color: #999;
+}
+
+.confrim-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 7.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 200
+}
+
+.confirm-content {
+    background: #fff;
+    width: 5.4rem;
+    margin: 0 auto;
+    margin-top: 4.04rem;
+    border-radius: 0.3rem;
+    font-size: 0.32rem;
+}
+
+.confirm-title {
+    padding: 0.8rem 0.42rem;
+    line-height: 1.5em;
+    text-align: center;
+    color: #242a36;
+}
+
+.confirm-btn-area {
+    font-size: 0.3rem;
+    border-top: 1px solid #e8e8e8;
+    overflow: hidden;
+    text-align: center;
+    color: #3a7df6;
+}
+
+.confirm-btn-area .confirm-btn {
+    width: 2.65rem;
+    display: block;
+    float: left;
+    padding: 0.3rem 0;
+}
+
+.confirm-btn-area .cancel-btn {
+    width: 2.65rem;
+    display: block;
+    float: left;
+    border-right: 0.02rem solid #e8e8e8;
+    padding: 0.3rem 0;
+}
+
+.alert-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 7.5rem;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.alert-content {
+    width: 5.4rem;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 4.04rem;
+    border-radius: 0.2rem;
+}
+
+.alert-title {
+    font-size: 0.36rem;
+    padding: 0.3rem;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+.alert-ok-btn {
+    color: #f18901;
+    font-size: 0.3rem;
+    display: block;
+    text-align: center;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    border-top: 1px solid #e8e8e8;
+}
+
+
+/*提示框样式*/
+
+.common_loading {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    display: block;
+    z-index: 1000;
+    text-align: center;
+}
+
+.common_loading_msg {
+    display: inline-block;
+    margin: 70% auto;
+    padding: 0.4rem 0.22rem;
+    text-align: center;
+    min-width: 4.5rem;
+    font-size: 0.34rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz--border-radius: 0.1rem;
+}
+
+@media all and (min-width: 750px) {
+    body {
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 320px) {
+    body {
+        width: 320px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+}
