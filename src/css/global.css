@@ -136,13 +136,13 @@ textarea {
 .common_loading_msg {
   display: inline-block;
   margin: 70% auto;
-  padding: 0.4rem 0.22rem;
+  padding: 0.26rem 0.22rem;
   text-align: center;
   min-width: 4.5rem;
   font-size: 0.34rem;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
-  border-radius: 0.2rem;
+  border-radius: 0.15rem;
   -webkit-border-radius: 0.2rem;
   -moz--border-radius: 0.1rem;
 }

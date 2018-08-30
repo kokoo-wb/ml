@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/D/store_detail.css" />
+
+    <title>门店详情</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <img class="back-img" src="../../images/back.png" />
+        <div class="search-input">
+            <img src="../../images/home_search_ic@2x.png" />
+            <input type="text" placeholder="请输入关键字搜索" />
+        </div>
+        <a>
+            <img class="share-img" src="../../images/head_icon_share@2x.png" />
+        </a>
+    </div>
+
+    <div class="account-msg-box">
+        <img class="head-img" src="../../images/store_detail_head.png" />
+        <div class="account-msg">
+            <p>小希不二文具咖</p>
+            <p>收藏量：64120</p>
+        </div>
+        <a class="save-btn" data="0"></a>
+    </div>
+    <div class="banner">
+        <img src="../../images/store_detail_banner.png" />
+    </div>
+
+    <ul class="store-detail-menu">
+        <li class="active">综合</li>
+        <li>销量</li>
+        <li>价格</li>
+    </ul>
+
+    <ul class="goods-list">
+        <li>
+            <div class="goods-img">
+                <img src="../../images/goods1.png" />
+            </div>
+            <div class="goods-item-msg">
+                <p class="goods-title">商品名称商品名称商品名称</p>
+                <p>
+                    <span class="price-now">￥59.99</span>
+                    <span class="price-old">￥128.99</span>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="goods-img">
+                <img src="../../images/goods1.png" />
+            </div>
+            <div class="goods-item-msg">
+                <p class="goods-title">商品名称商品名称商品名称</p>
+                <p>
+                    <span class="price-now">￥59.99</span>
+                    <span class="price-old">￥128.99</span>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="goods-img">
+                <img src="../../images/goods1.png" />
+            </div>
+            <div class="goods-item-msg">
+                <p class="goods-title">商品名称商品名称商品名称</p>
+                <p>
+                    <span class="price-now">￥59.99</span>
+                    <span class="price-old">￥128.99</span>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="goods-img">
+                <img src="../../images/goods1.png" />
+            </div>
+            <div class="goods-item-msg">
+                <p class="goods-title">商品名称商品名称商品名称</p>
+                <p>
+                    <span class="price-now">￥59.99</span>
+                    <span class="price-old">￥128.99</span>
+                </p>
+            </div>
+        </li>
+    </ul>
+</body>
+
+<script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../js/common.js"></script>
+
+<script>
+    $('.store-detail-menu li').click(function() {
+        $('.store-detail-menu li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.save-btn').click(function() {
+        if ($('.save-btn').attr('data') == '0') {
+            $('.save-btn').addClass('save-btn-active').attr('data', 1);
+            commonPlugins.messageModal('收藏成功');
+        } else {
+            $('.save-btn').removeClass('save-btn-active').attr('data', 0);
+        }
+    });
+</script>
+
+</html>

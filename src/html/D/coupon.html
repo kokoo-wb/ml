@@ -16,9 +16,9 @@
     <meta name="format-detection" content="telephone=no" />
 
     <link rel="stylesheet" href="../../css/global.css" />
-    <link rel="stylesheet" href="../../css/A/enter_password.css" />
+    <link rel="stylesheet" href="../../css/D/coupon.css" />
 
-    <title>输入密码</title>
+    <title>优惠券</title>
 
     <script>
         initScreen();
@@ -46,34 +46,51 @@
 <body>
     <div class="header">
         <img src="../../images/back.png" />
-        <p>输入密码</p>
+        <p>优惠券</p>
     </div>
 
-    <div class="input-box">
-        <input class="pass-input" type="password" placeholder="请输入密码" data="0" />
-        <img class="show-password" src="../../images/a4_ic_eye@2x.png" />
-    </div>
-
-    <a class="finish-btn">完成</a>
+    <ul class="coupon-list">
+        <li>
+            <div class="price">
+                <span>￥</span>
+                <span>10.0</span>
+            </div>
+            <div class="price-desc">
+                <p>满00元可用</p>
+                <p>2017-12-27前可用</p>
+            </div>
+        </li>
+        <li>
+            <div class="price">
+                <span>￥</span>
+                <span>10.0</span>
+            </div>
+            <div class="price-desc">
+                <p>满00元可用</p>
+                <p>2017-12-27前可用</p>
+            </div>
+        </li>
+        <li>
+            <div class="price">
+                <span>￥</span>
+                <span>10.0</span>
+            </div>
+            <div class="price-desc">
+                <p>满00元可用</p>
+                <p>2017-12-27前可用</p>
+            </div>
+        </li>
+        <li>
+            <div class="price">
+                <span>￥</span>
+                <span>10.0</span>
+            </div>
+            <div class="price-desc">
+                <p>满00元可用</p>
+                <p>2017-12-27前可用</p>
+            </div>
+        </li>
+    </ul>
 </body>
-
-<script src="../../lib/zepto/zepto.min.js"></script>
-<script src="../../js/common.js"></script>
-
-<script>
-    $('.show-password').click(function() {
-        if ($('.pass-input').attr('data') == '0') {
-            $('.pass-input').attr('type', 'text').attr('data', '1');
-            $(this).attr('src', '../../images/a4_ic_eye_s@2x.png');
-        } else {
-            $('.pass-input').attr('type', 'password').attr('data', '0');
-            $(this).attr('src', '../../images/a4_ic_eye@2x.png');
-        }
-    });
-
-    $('.finish-btn').click(function() {
-        commonPlugins.messageModal('请输入正确的密码');
-    });
-</script>
 
 </html>
