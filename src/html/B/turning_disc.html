@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/B/turning_disc.css" />
+
+    <title>幸运转盘</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../../images/back.png" />
+        <p>幸运转盘</p>
+    </div>
+
+    <div class="turning-area">
+        <div class="turning-box">
+            <div class="turning" data="0">
+                <img src="../../images/icon_Rotary_02@2x.png" />
+            </div>
+            <img class="rota-img" src="../../images/icon_Rotary_01@2x.png" />
+        </div>
+    </div>
+
+
+</body>
+
+<script src=" ../../lib/zepto/zepto.min.js "></script>
+<script src=" ../../js/common.js "></script>
+
+<script>
+    /**
+     * [转盘旋转]
+     * @param [number] times [旋转次数]
+     * @param [number] num [每次旋转结束的度数]
+     * @param [number] degree [开始旋转的度数]
+     */
+    function turnDisc(times, num, degree, callback) {
+        var rota = setInterval(function() {
+            times += 1;
+            degree += num;
+            $('.rota-img').css({
+                'transform': 'rotate(' + degree + 'deg)'
+            });
+
+            if (degree > 360) {
+                degree = 0;
+            }
+
+            if (times >= 400) {
+                num = 3 - (3 / 400 * (times - 400));
+            }
+
+            if (num == 0) {
+                clearInterval(rota);
+                reword(parseInt(degree));
+                callback();
+            }
+        }, 1);
+    }
+
+
+    /**
+     * [转盘旋转]
+     * @param [number] degree [每次旋转结束的度数]
+     */
+    function reword(degree) {
+        var title = '';
+
+        if (degree % 45 == 0) {
+            if (degree == 360) {
+                degree -= 5;
+            } else {
+                degree += 5;
+            }
+        }
+
+        if (degree > 0 && degree < 60) {
+            title = '50元红包';
+        } else if (degree > 60 && degree < 120) {
+            title = '20元红包';
+        } else if (degree > 120 && degree < 180) {
+            title = '10元红包';
+        } else if (degree > 180 && degree < 240) {
+            title = '0.5%加息劵';
+        } else if (degree > 240 && degree < 300) {
+            title = '小米蓝牙耳机';
+        } else if (degree > 300 && degree < 360) {
+            title = '谢谢参与';
+        }
+
+        $('.rota-img').css({
+            'transform': 'rotate(' + degree + 'deg)'
+        });
+
+        commonPlugins.confrimModal({
+            title: '恭喜你开出' + title,
+            confirmName: '查看',
+            cancelName: '取消',
+            onOk: function() {
+                commonPlugins.closeConfirmModal();
+            },
+            onCancel: function() {
+                commonPlugins.closeConfirmModal();
+            }
+        });
+    }
+
+
+    // 开始触发转盘旋转
+    $('.turning').click(function() {
+        if ($(this).attr('data') == 0) {
+            var time = 0;
+            var num = 3;
+            var degreeNum = parseInt(Math.random() * 360);
+            turnDisc(time, num, degreeNum, function() {
+                $('.turning').attr('data', '0');
+            });
+            $(this).attr('data', '1');
+        }
+    });
+</script>
+
+</html>

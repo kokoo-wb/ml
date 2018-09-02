@@ -62,24 +62,26 @@ body, html {
     }
 }
 
+
 .data-list {
     margin-top: 0.3rem;
     li {
         display: flex;
-        align-items: center;
-        height: 1.56rem;
+        flex-direction: column;
+        justify-content: center;
+        height: 1.4rem;
         margin: 0 0.3rem;
         border-bottom: 0.02rem solid #e8e8e8;
+        line-height: 1em;
 
-        img {
-            border-radius: 2rem;
-            width: 0.92rem;
-            height: 0.92rem;
+        .address {
+            font-size: 0.32rem;
         }
 
-        span {
-            font-size: 0.34rem;
-            margin-left: 0.3rem;
+        .area {
+            font-size: 0.26rem;
+            color: #9c9a9a;
+            margin-top: 0.13rem;
         }
 
         &:last-child {
@@ -102,3 +104,5 @@ body, html {
         margin-top: 0.4rem;
     }
 }
+
+

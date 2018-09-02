@@ -98,23 +98,30 @@ html {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 1.56rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 1.4rem;
   margin: 0 0.3rem;
   border-bottom: 0.02rem solid #e8e8e8;
+  line-height: 1em;
 }
-.data-list li img {
-  border-radius: 2rem;
-  width: 0.92rem;
-  height: 0.92rem;
+.data-list li .address {
+  font-size: 0.32rem;
 }
-.data-list li span {
-  font-size: 0.34rem;
-  margin-left: 0.3rem;
+.data-list li .area {
+  font-size: 0.26rem;
+  color: #9c9a9a;
+  margin-top: 0.13rem;
 }
 .data-list li:last-child {
   border: 0;

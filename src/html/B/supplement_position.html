@@ -16,9 +16,9 @@
     <meta name="format-detection" content="telephone=no" />
 
     <link rel="stylesheet" href="../../css/global.css" />
-    <link rel="stylesheet" href="../../css/C/search.css" />
+    <link rel="stylesheet" href="../../css/B/supplement_position.css" />
 
-    <title>搜索</title>
+    <title>定位</title>
 
     <script>
         initScreen();
@@ -46,35 +46,24 @@
 <body>
     <div class="header">
         <img src="../../images/back.png" />
-        <p>搜索</p>
+        <p>定位</p>
     </div>
 
-    <div class="search-content">
-        <div class="search-box">
-            <div class="search-input">
-                <img src="../../images/b3_icon_search@2x.png" />
-                <input type="text" placeholder="请输入关键字搜索" />
+    <div class="input-box">
+        <div class="input-box-item">
+            <span>小区/大厦/学校</span>
+            <div class="choose-tip">
+                <span>点击选择</span>
+                <img src="../../images/b3_icon_arrow@2x.png" />
             </div>
-            <a>取消</a>
         </div>
-
-        <ul class="data-list">
-            <li>
-                <img src="../../images/company_head.png" />
-                <span>紫小鲸</span>
-            </li>
-            <li>
-                <img src="../../images/company_head.png" />
-                <span>紫小鲸</span>
-            </li>
-        </ul>
+        <div class="input-box-item">
+            <span>详细地址</span>
+            <input class="seller-input" type="text" placeholder="请输入详细地址" />
+        </div>
     </div>
 
-    <!-- 暂无数据 -->
-    <!-- <div class="no-data-box">
-        <p class="no-data">抱歉，未找到相关商家或商品，可尝试修改后搜索</p>
-    </div> -->
-
+    <a class="finish-btn">完成</a>
 </body>
 
 </html>

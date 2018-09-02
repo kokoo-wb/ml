@@ -33,30 +33,7 @@ html {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.logo-box {
-  height: 2.9rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.logo-box img {
-  height: 1.4rem;
-  width: 1.4rem;
-}
 .input-box {
-  height: 2rem;
   background: #fff;
 }
 .input-box .input-box-item {
@@ -71,11 +48,6 @@ html {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-     -moz-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
      -moz-box-align: center;
@@ -101,22 +73,13 @@ html {
 }
 .input-box .input-box-item input {
   height: 0.9rem;
-  width: 6.2rem;
+  width: 4.2rem;
   border: 0;
   outline: none;
   font-size: 0.3rem;
-  margin-left: 0.15rem;
+  margin-left: 0.3rem;
 }
-.forget-pass-btn {
-  text-align: right;
-  margin-top: 0.43rem;
-}
-.forget-pass-btn a {
-  color: #666;
-  font-size: 0.26rem;
-  margin-right: 0.3rem;
-}
-.login-btn {
+.finish-btn {
   width: 6rem;
   height: 0.9rem;
   display: block;
@@ -127,50 +90,4 @@ html {
   line-height: 0.9rem;
   border-radius: 0.08rem;
   margin-top: 1rem;
-}
-.regist-btn {
-  width: 6rem;
-  height: 0.9rem;
-  display: block;
-  color: #5598ff;
-  border: 0.02rem solid #5598ff;
-  background: #fff;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 0.9rem;
-  border-radius: 0.08rem;
-  margin-top: 0.3rem;
-}
-.other-login {
-  margin-top: 1rem;
-  background-image: url(../../images/login_line.png);
-  background-size: 5rem 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
-  font-size: 0.26rem;
-  color: #999;
-}
-.other-login-box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.other-login-box img {
-  width: 0.88rem;
-  height: 0.88rem;
 }

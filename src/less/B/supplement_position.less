@@ -1,0 +1,77 @@
+body, html {
+    background: #f7f7f7;
+}
+
+.header {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    position: relative;
+    background: #fff;
+
+    img {
+        width: 0.44rem;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.input-box {
+    background: #fff;
+
+    .input-box-item {
+        height: 1rem;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding: 0 0.3rem;
+        border-bottom: 0.02rem solid #e8e8e8;
+        position: relative;
+        
+        &:last-child {
+            border: 0;
+        }
+
+        input {
+            height: 0.9rem;
+            width: 4.2rem;
+            border: 0;
+            outline: none;
+            font-size: 0.3rem;
+            margin-left: 1.1rem;
+        }
+
+        .choose-tip {
+            display: flex;
+            position: absolute;
+            right: 0;
+            font-size: 0.26rem;
+            align-items: center;
+            right: 0.3rem;
+
+            img {
+                height: 0.24rem;
+                margin-left: 0.05rem;
+            }
+
+        }
+    }    
+}
+
+.finish-btn {
+    width: 6rem;
+    height: 0.9rem;
+    display: block;
+    background: #5598ff;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 0.9rem;
+    border-radius: 0.08rem;
+    margin-top: 1rem;
+}

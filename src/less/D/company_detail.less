@@ -1,0 +1,195 @@
+body, html {
+    background: #f7f7f7;
+}
+
+.header {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    position: relative;
+    background: #fff;
+
+    .back-img {
+        width: 0.44rem;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .search-input {
+        display: flex;
+        align-items: center;
+        height: 0.58rem;
+        width: 5.38rem;
+        background: #f9f7f7;
+        border-radius: 1rem;
+
+        img {
+            width: 0.32rem;
+            height: 0.32rem;
+            margin-left: 0.26rem;
+        }
+
+        input {
+            height: 0.5rem;
+            width: 5.7rem;
+            border: 0;
+            outline: none;
+            margin-left: 0.2rem;
+            background: none;
+            font-size: 0.24rem;
+            color: #333;
+        }
+    }
+
+    .share-img {
+        width: 0.48rem;
+        position: absolute;
+        right: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+.account-msg-box {
+    height: 1.8rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .head-img {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 1rem;
+        margin-left: 0.3rem;
+    }
+
+    .account-msg {
+        margin-left: 0.3rem;
+        width: 4.7rem;
+
+        p:first-child {
+            font-size: 0.36rem;
+            color: #303030;
+        }
+
+        p:last-child {
+            color: #5a5a5a;
+            margin-top: 0.1rem;
+        }
+    }
+
+    .save-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0.3rem;
+        display: block;
+        width: 0.48rem;
+        height: 0.48rem;
+        background-image: url('../../images/d3_star@2x.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .save-btn-active {
+        background-image: url('../../images/d3_star_s@2x.png');
+    }
+}
+
+.banner {
+    height: 3.4rem;
+    background: #fff;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.store-detail-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.32rem;
+    height: 1rem;
+    background: #fff;
+    
+    li {
+        margin: 0 0.55rem;
+
+        &.active {
+            color: #57aaff;
+            font-size: 0.36rem;
+            padding-bottom: 0.1rem;
+            position: relative;
+            top: 0.03rem;
+
+            &::before {
+                content: ' ';
+                position: absolute;
+                display: block;
+                width: 0.5rem;
+                height: 0.04rem;
+                background: #57aaff;
+                border-radius: 1rem;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.goods-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.11rem;
+    li {
+        background: #fff;
+        width: 3.59rem;
+        height: 4.89rem;
+        margin-left: 0.11rem;
+        margin-top: 0.11rem;
+        font-size: 0.28rem;
+        .goods-img {
+            img {
+                width: 3.59rem;
+                height: 3.59rem;
+            }
+        }
+
+        .goods-item-msg {
+            display: flex;
+            height: 1.3rem;
+            justify-content: center;
+            flex-direction: column;
+
+            .goods-title {
+                width: 100%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                padding: 0 0.14rem;
+                box-sizing: border-box;
+                margin-bottom: 0.1rem;
+            }
+
+            .price-now {
+                color: #ff4141;
+            }
+
+            .price-old {
+                color: #999;
+                font-size: 0.2rem;
+                text-decoration: line-through;
+            }
+        }        
+    }
+}
