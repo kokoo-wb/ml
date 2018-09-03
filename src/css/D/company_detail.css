@@ -121,7 +121,7 @@ html {
   background-repeat: no-repeat;
 }
 .account-msg-box .save-btn-active {
-  background-image: url(../../images/d3_star_s@2x.png);
+  background-image: url(data:image/png;base64,);
 }
 .banner {
   height: 3.4rem;
