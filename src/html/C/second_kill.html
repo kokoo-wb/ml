@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/C/second_kill.css" />
+
+    <title>限时秒杀</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <img class="back-btn" src="../../images/back.png" />
+        <p>限时秒杀</p>
+        <img class="cart-btn" src="../../images/head_icon_car@2x.png" />
+    </div>
+
+    <ul class="secondkill-list">
+        <li>
+            <img src="../../images/pic2.png" />
+            <div class="goods-msg">
+                <p class="goods-name">商品名称商品名称</p>
+                <div class="price">
+                    <span class="curr-price">￥59.99</span>
+                    <span class="old-price">￥129.99</span>
+                </div>
+                <div class="kill-time">
+                    <span>剩余：05:10:56</span>
+                    <a>去秒杀</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="../../images/pic2.png" />
+            <div class="goods-msg">
+                <p class="goods-name">商品名称商品名称</p>
+                <div class="price">
+                    <span class="curr-price">￥59.99</span>
+                    <span class="old-price">￥129.99</span>
+                </div>
+                <div class="kill-time">
+                    <span>剩余：05:10:56</span>
+                    <a>去秒杀</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="../../images/pic2.png" />
+            <div class="goods-msg">
+                <p class="goods-name">商品名称商品名称</p>
+                <div class="price">
+                    <span class="curr-price">￥59.99</span>
+                    <span class="old-price">￥129.99</span>
+                </div>
+                <div class="kill-time">
+                    <span>剩余：05:10:56</span>
+                    <a>去秒杀</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="../../images/pic2.png" />
+            <div class="goods-msg">
+                <p class="goods-name">商品名称商品名称</p>
+                <div class="price">
+                    <span class="curr-price">￥59.99</span>
+                    <span class="old-price">￥129.99</span>
+                </div>
+                <div class="kill-time">
+                    <span>剩余：05:10:56</span>
+                    <a>去秒杀</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="../../images/pic2.png" />
+            <div class="goods-msg">
+                <p class="goods-name">商品名称商品名称</p>
+                <div class="price">
+                    <span class="curr-price">￥59.99</span>
+                    <span class="old-price">￥129.99</span>
+                </div>
+                <div class="kill-time">
+                    <span>剩余：05:10:56</span>
+                    <a>去秒杀</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>

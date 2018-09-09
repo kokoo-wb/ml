@@ -31,16 +31,28 @@
 .user-agreement {
   padding: 0.48rem 0.4rem;
 }
-.user-agreement h1 {
+.user-agreement h1,
+.user-agreement h2,
+.user-agreement h3,
+.user-agreement h4,
+.user-agreement h5,
+.user-agreement h6 {
   color: #1d1d26;
   font-size: 0.36rem;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
 }
-.user-agreement h1:nth-child(1) {
+.user-agreement h1:nth-child(1),
+.user-agreement h2:nth-child(1),
+.user-agreement h3:nth-child(1),
+.user-agreement h4:nth-child(1),
+.user-agreement h5:nth-child(1),
+.user-agreement h6:nth-child(1) {
   margin-top: 0;
 }
-.user-agreement p {
+.user-agreement p,
+.user-agreement div,
+.user-agreement article {
   text-align: justify;
   font-size: 0.3rem;
   color: #393939;
