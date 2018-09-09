@@ -1,0 +1,234 @@
+body, html {
+    background: #f7f7f7;
+}
+
+.header {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    position: relative;
+    background: #fff;
+
+    img {
+        width: 0.44rem;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.order-address {
+    height: 2rem;
+    background: #fff;
+    border-bottom: 0.02rem solid #e8e8e8;
+    padding: 0 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+
+    .order-user {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.34rem;
+    }
+
+    p {
+        font-size: 0.28rem;
+        margin-top: 0.2rem;
+    }
+}
+
+.order-goods {
+    height: 2.17rem;
+    background: #fff;
+    border-bottom: 0.02rem solid #e8e8e8;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .goods-msg {
+        margin-left: 0.22rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 1.5rem;
+
+        .price-num {
+            display: flex;
+            justify-content: space-between;
+
+            span:first-child {
+                font-size: 0.28rem;
+                color: #ff2b2b;
+            }
+            span:last-child {
+                font-size: 0.26rem;
+                color: #666;
+            }
+        }
+    }
+}
+
+.order-price {
+    height: 0.8rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    p {
+        box-sizing: border-box;
+        padding-right: 0.3rem;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        font-size: 0.26rem;
+        color: #666;
+        width: 100%;
+        line-height: 1em;
+
+        .price-num {
+            font-size: 0.34rem;
+            color: #ff4a4a;
+        }
+    }
+}
+
+.pay-select-box {
+    background: #fff;
+    margin-bottom: 1.28rem;
+
+    .pay-select-item {
+        min-height: 1rem;
+        width: 6.9rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding: 0.2rem 0.1rem;
+        border-bottom: 0.02rem solid #e8e8e8;
+        font-size: 0.32rem;
+        position: relative;
+
+        .pay-way-img {
+            width: 0.6rem;
+            height: 0.6rem;
+        }
+
+        .check-img {
+            width: 0.48rem;
+            height: 0.48rem;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: none;
+        }
+
+        .pay-name {
+            margin-left: 0.3rem;
+            line-height: 1em;
+
+            .pay-desc {
+                color: #999;
+                margin-top: 0.2rem;
+            }
+        }
+        
+        &:last-child {
+            border: 0;
+        }
+    }    
+
+    .pay-select-active {
+        .check-img {
+            display: block;
+        }
+    }
+}
+
+.choose-coupon {
+    background: #fff;
+    margin-top: 0.3rem;
+
+    .input-box-item {
+        height: 0.9rem;
+        width: 6.9rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.1rem;
+
+        .coupon-text {
+            font-size: 0.26rem;
+            display: flex;
+            align-items: center;
+            img {
+                width: 0.24rem;
+                height: 0.24rem;
+                margin-left: 0.05rem;
+            }
+        }
+    }    
+}
+
+.pay-way {
+    height: 1.12rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 0.32rem;
+    padding-left: 0.3rem;
+
+    &::before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        height: 0.4rem;
+        width: 0.1rem;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #5598ff;
+    }
+}
+
+.pay-bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 0.98rem;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 7.5rem;
+    font-size: 0.32rem;
+    align-items: center;
+
+    span {
+        color: #ee3737;
+        margin-left: 0.4rem;
+    }
+
+    a {
+        display: block;
+        width: 2.3rem;
+        height: 0.98rem;
+        line-height: 0.98rem;
+        text-align: center;
+        color: #fff;
+        background: #ff4a4a;
+        
+    }
+}
+

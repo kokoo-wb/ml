@@ -29,7 +29,7 @@ var config = {
     // context: path.resolve(__dirname),
     entry: getCSSEntries(PATH_ENUM.css),
     output: {
-        publicPath: '../',
+        publicPath: '../images/',
         path: path.join(__dirname, './src/css'),
         filename: '[name].css'
     },
@@ -46,7 +46,7 @@ var config = {
                 loader: 'url-loader',
                 options: {
                     limit: 1000,
-                    name: '../images/[name].[ext]'
+                    name: '[name].[ext]'
                 }
             }],
             include: path.join(__dirname, 'src')

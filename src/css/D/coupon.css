@@ -68,7 +68,7 @@ html {
   height: 1.8rem;
   margin-top: 0.5rem;
   margin-left: 0.15rem;
-  background-image: url(../../images/icon_ticket_02@2x.png);
+  background-image: url(../images/icon_ticket_02@2x.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -92,7 +92,7 @@ html {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../../images/icon_ticket_01@2x.png);
+  background-image: url(../images/icon_ticket_01@2x.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

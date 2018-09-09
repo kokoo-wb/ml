@@ -116,12 +116,12 @@ html {
   display: block;
   width: 0.48rem;
   height: 0.48rem;
-  background-image: url(../../images/d3_star@2x.png);
+  background-image: url(../images/d3_star@2x.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .account-msg-box .save-btn-active {
-  background-image: url(data:image/png;base64,);
+  background-image: url(../images/d3_star_s@2x.png);
 }
 .banner {
   height: 3.4rem;

@@ -71,19 +71,18 @@
 .classify .second-classify img {
   width: 0.3rem;
   height: 0.3rem;
+  margin-left: 0.05rem;
 }
-.classify .classify-list {
+.classify-list {
   display: none;
   position: absolute;
-  top: 0.82rem;
-  left: 0;
-  width: 100%;
-  background: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  top: 1.74rem;
+  bottom: 0;
+  width: 7.5rem;
   overflow: auto;
-  -webkit-box-shadow: 0 10px 15px #eee;
-          box-shadow: 0 10px 15px #eee;
 }
-.classify .classify-list li {
+.classify-list li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -96,6 +95,7 @@
           align-items: center;
   height: 0.8rem;
   padding: 0 0.4rem;
+  background: #fff;
 }
 .secondkill-list li {
   display: -webkit-box;
@@ -159,7 +159,6 @@
           justify-content: space-between;
 }
 .secondkill-list li .goods-msg .price .curr-price {
-  color: #ff2b2b;
   font-size: 0.28rem;
 }
 .secondkill-list li .goods-msg .price .left-num {

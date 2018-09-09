@@ -59,13 +59,13 @@
             <span>二级分类</span>
             <img src="../../images/classify_icon_02@2x.png" />
         </div>
-
-        <ul class="classify-list">
-            <li>分类一</li>
-            <li>分类二</li>
-            <li>分类三</li>
-        </ul>
     </div>
+
+    <ul class="classify-list" data="0">
+        <li>分类一</li>
+        <li>分类二</li>
+        <li>分类三</li>
+    </ul>
 
     <ul class="secondkill-list">
         <li>
@@ -114,14 +114,19 @@
 <script src="../../lib/zepto/zepto.min.js"></script>
 <script>
     $('.first-classify').click(function() {
-        $('.classify-list').show();
+        $('.classify-list').attr('data', '0').show();
     });
 
     $('.second-classify').click(function() {
-        $('.classify-list').show();
+        $('.classify-list').attr('data', '1').show();
     });
 
     $('.classify-list li').click(function() {
+        if ($('.classify-list').attr('data') == '0') {
+            $('.first-classify span').text($(this).text());
+        } else {
+            $('.second-classify span').text($(this).text());
+        }
         $('.classify-list').hide();
     });
 </script>

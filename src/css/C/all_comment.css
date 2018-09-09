@@ -1,0 +1,113 @@
+.header {
+  height: 0.9rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.36rem;
+  border-bottom: 0.02rem solid #e8e8e8;
+  position: relative;
+  background: #fff;
+}
+.header img {
+  width: 0.44rem;
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.comment-list {
+  padding: 0 0.4rem;
+}
+.comment-list > li {
+  border-bottom: 0.02rem solid #e8e8e8;
+}
+.comment-list > li .comment-user {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1.5rem;
+  position: relative;
+}
+.comment-list > li .comment-user img {
+  border-radius: 1rem;
+  width: 0.92rem;
+  height: 0.92rem;
+}
+.comment-list > li .comment-user .name {
+  margin-left: 0.3rem;
+  font-size: 0.34rem;
+}
+.comment-list > li .comment-user .comment-time {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  font-size: 0.24rem;
+  color: #666;
+  float: right;
+}
+.comment-list > li .comment-content {
+  font-size: 0.28rem;
+}
+.comment-list > li .comment-img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+.comment-list > li .comment-img li {
+  width: 2.15rem;
+  height: 2.15rem;
+  background: #ffcc33;
+  margin-bottom: 0.13rem;
+  border-radius: 0.1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.comment-list > li .comment-img li img {
+  width: 100%;
+  min-height: 100%;
+}

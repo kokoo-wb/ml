@@ -143,7 +143,7 @@ html {
 }
 .other-login {
   margin-top: 1rem;
-  background-image: url(../../images/login_line.png);
+  background-image: url(../images/login_line.png);
   background-size: 5rem 100%;
   background-repeat: no-repeat;
   background-position: center;
