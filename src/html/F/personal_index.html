@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/F/personal_index.css" />
+
+    <title>个人中心</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <p>个人中心</p>
+    </div>
+
+    <div class="persoal-item">
+        <div class="persoal-msg">
+            <img src="../../images/pic2.png" />
+            <span>紫小鲸</span>
+        </div>
+        <img src="../../images/b3_icon_arrow@2x.png" />
+    </div>
+
+    <ul class="menu-list no-border">
+        <li>
+            <div class="menu-item">
+                <img src="../../images/user_ic_wallet@2x.png" />
+                <span>我的钱包</span>
+            </div>
+            <img src="../../images/b3_icon_arrow@2x.png" />
+        </li>
+        <li>
+            <div class="menu-item">
+                <img src="../../images/user_ic_optionsList@2x.png" />
+                <span>我的订单</span>
+            </div>
+            <img src="../../images/b3_icon_arrow@2x.png" />
+        </li>
+        <li>
+            <div class="menu-item">
+                <img src="../../images/user_ic_black_tag@2x.png" />
+                <span>我的优惠券</span>
+            </div>
+            <img src="../../images/b3_icon_arrow@2x.png" />
+        </li>
+        <li>
+            <div class="menu-item">
+                <img src="../../images/user_ic_contact@2x.png" />
+                <span>我的地址</span>
+            </div>
+            <img src="../../images/b3_icon_arrow@2x.png" />
+        </li>
+        <li>
+            <div class="menu-item">
+                <img src="../../images/user_ic_footstep@2x.png" />
+                <span>我的足迹</span>
+            </div>
+            <img src="../../images/b3_icon_arrow@2x.png" />
+        </li>
+    </ul>
+
+    <ul class="menu-list">
+        <li>
+            <div class="menu-item">
+                <img src="../../images/user_ic_wedding@2x.png" />
+                <span>我的合作</span>
+            </div>
+            <img src="../../images/b3_icon_arrow@2x.png" />
+        </li>
+    </ul>
+
+    <ul class="menu-list">
+        <li>
+            <div class="menu-item">
+                <img src="../../images/user_ic_cogwheel@2x.png" />
+                <span>设置</span>
+            </div>
+            <img src="../../images/b3_icon_arrow@2x.png" />
+        </li>
+    </ul>
+
+    <ul class="footer-bar">
+        <li class="active">
+            <a>
+                <div class="footer-icon"></div>
+                <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a>
+                <div class="footer-icon"></div>
+                <p>商城</p>
+            </a>
+        </li>
+        <li>
+            <a>
+                <div class="footer-icon"></div>
+                <p>店铺</p>
+            </a>
+        </li>
+        <li>
+            <a>
+                <div class="footer-icon"></div>
+                <p>消息</p>
+            </a>
+        </li>
+        <li>
+            <a>
+                <div class="footer-icon"></div>
+                <p>个人中心</p>
+            </a>
+        </li>
+    </ul>
+
+    <p class="contact-us">联系我们：0279-88878879</p>
+</body>
+
+<script src="../../lib/zepto/zepto.min.js"></script>
+
+<script>
+    $('.footer-bar li').click(function() {
+        $('.footer-bar li').removeClass('active');
+        $(this).addClass('active');
+    });
+</script>
+
+</html>

@@ -124,14 +124,14 @@ html {
   display: block;
   width: 0.4rem;
   height: 0.4rem;
-  background-image: url(../images/h7_ic_01@2x.png);
+  background-image: url(../../images/h7_ic_01@2x.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-left: 0.5rem;
   margin-right: 0.25rem;
 }
 .agree-box .radio-btn-active {
-  background-image: url(../images/h7_ic_02@2x.png);
+  background-image: url(../../images/h7_ic_02@2x.png);
 }
 .agree-box .agreement {
   color: #5598ff;

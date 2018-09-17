@@ -52,6 +52,7 @@
   color: #333;
   font-size: 0.34rem;
   margin-top: 0.3rem;
+  font-weight: normal;
 }
 .detail-content h1:nth-child(1),
 .detail-content h2:nth-child(1),

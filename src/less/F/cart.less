@@ -1,0 +1,218 @@
+body, html {
+    background: #f7f7f7;
+}
+
+.header {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    position: relative;
+    background: #fff;
+
+    .back-img {
+        width: 0.44rem;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .cancel-btn {
+        font-size: 0.3rem;
+        color: #5598ff;
+        position: absolute;
+        right: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.delete-box {
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.5rem;
+    background: #fff;
+    margin-bottom: 0.2rem;
+
+    a {
+        display: block;
+        text-align: center;
+        border: 0.02rem solid #ff5151;
+        color: #ff5151;
+        width: 3.3rem;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        border-radius: 1rem;
+        font-size: 0.26rem;
+    }
+}
+
+.goods-list {
+    margin-bottom: 1.5rem;
+
+    li {        
+        margin-bottom: 0.3rem; 
+        
+        .goods-classify {
+            background: #fff;
+            height: 1rem;
+            border-bottom: 0.02rem solid #e8e8e8;
+            display: flex;
+            align-items: center;
+            padding: 0 0.3rem;
+            a {
+                display: block;
+                width: 0.36rem;
+                height: 0.36rem;
+                background-image: url('../../images/fi_icon_round@2x.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                margin-right: 0.3rem;
+            }
+
+            a.active {
+                background-image: url('../../images/fi_icon_round_s@2x.png');
+            }
+        }        
+
+        ul {
+            li {
+                background: #fff;
+                height: 2.27rem;
+                margin-bottom: 0.05rem;
+                display: flex;
+                align-items: center;
+                padding: 0 0.3rem;
+
+                a.choose-btn {
+                    display: block;
+                    width: 0.36rem;
+                    height: 0.36rem;
+                    background-image: url('../../images/fi_icon_round@2x.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    margin-right: 0.3rem;
+                }
+
+                a.active {
+                    background-image: url('../../images/fi_icon_round_s@2x.png');
+                }
+
+                img {
+                    width: 1.7rem;
+                    height: 1.7rem;
+                }
+
+                .goods-msg {
+                    margin-left: 0.3rem;
+                    width: 4.24rem;
+                    height: 1.7rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .price-num-box {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        line-height: 1em;
+
+                        .goods-num-box {
+                            display: flex;
+
+                            a {
+                                display: block;
+                                width: 0.47rem;
+                                height: 0.42rem;
+                                border: 0.02rem solid #e8e8e8;
+                                text-align: center;
+                                line-height: 0.42rem;
+                                color: #666;
+                            }
+
+                            input {
+                                width: 0.73rem;
+                                height: 0.42rem;
+                                border: 0;
+                                border-top: 0.02rem solid #e8e8e8;
+                                border-bottom: 0.02rem solid #e8e8e8;
+                                text-align: center;
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.3rem;
+    position: fixed;
+    bottom: 0;
+    width: 7.5rem;
+    height: 1rem;
+    background: #fff;
+    box-sizing: border-box;
+
+    .choose-all-box {
+        display: flex;
+        align-items: center;
+        .choose-all {
+            display: block;
+            width: 0.36rem;
+            height: 0.36rem;
+            background-image: url('../../images/fi_icon_round@2x.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-right: 0.15rem;
+        }
+
+        .active {
+            background-image: url('../../images/fi_icon_round_s@2x.png');
+        }
+    } 
+    
+    .pay-box {
+        display: flex;
+        font-size: 0.32rem;
+        align-items: center;
+
+        span {
+            margin-right: 0.18rem;
+        }
+
+        .label {
+            color: #333;
+        }
+        .price {
+            color: #ff8028;
+        }
+        .desc {
+            font-size: 0.24rem;
+            color: #666;
+        }
+        .pay-btn {
+            display: block;
+            width: 1.6rem;
+            height: 0.68rem;
+            color: #fff;
+            text-align: center;
+            line-height: 0.68rem;
+            font-size: 0.32rem;
+            background: #5598ff;
+            border-radius: 0.08rem;
+        }
+    }
+}

@@ -29,7 +29,7 @@ var config = {
     // context: path.resolve(__dirname),
     entry: getCSSEntries(PATH_ENUM.css),
     output: {
-        publicPath: '../images/',
+        publicPath: '../../images/',
         path: path.join(__dirname, './src/css'),
         filename: '[name].css'
     },

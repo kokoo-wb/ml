@@ -1,0 +1,74 @@
+body, html {
+    background: #f7f7f7;
+}
+
+.header {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    position: relative;
+    background: #fff;
+
+    img {
+        width: 0.44rem;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.check-list,
+.message-list {
+    margin-bottom: 0.3rem;
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 1rem;
+        background: #fff;
+        border-bottom: 0.02rem solid #e8e8e8;
+        padding: 0 0.4rem;
+        font-size: 0.28rem;
+
+        img {
+            width: 0.28rem;
+            height: 0.28rem;
+        }
+
+        .language-choose {
+            display: flex;
+            align-items: center;
+            img {
+                margin-left: 0.05rem;
+            }
+        }
+    }    
+}
+
+.check-list {
+    li {
+        border-top: 0.02rem solid #e8e8e8;
+
+        .check-update {
+            display: flex;
+            align-items: center;
+
+            span {
+                display: block;
+                width: 0.12rem;
+                height: 0.12rem;
+                background: #ff5151;
+                border-radius: 0.5rem;
+            }
+            img {
+                margin-left: 0.05rem;
+            }
+        }
+    }    
+}
+
+

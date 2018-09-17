@@ -1,0 +1,184 @@
+body, html {
+    background: #f7f7f7;
+}
+
+.header {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    position: relative;
+    background: #fff;
+
+    img {
+        width: 0.44rem;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.persoal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    background: #fff;
+    border-bottom: 0.02rem solid #e8e8e8;
+    padding: 0 0.4rem;
+    font-size: 0.28rem;
+    margin-bottom: 0.3rem;
+    .persoal-msg {
+        display: flex;
+        align-items: center;
+        img {
+            width: 0.8rem;
+            height: 0.8rem;
+            margin-right: 0.2rem;
+            border-radius: 1rem;
+        }
+    }
+
+    img {
+        width: 0.28rem;
+        height: 0.28rem;
+    }
+}
+
+.menu-list {
+    margin-bottom: 0.3rem;
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 1rem;
+        background: #fff;
+        border-bottom: 0.02rem solid #e8e8e8;
+        padding: 0 0.4rem;
+        font-size: 0.28rem;
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            img {
+                width: 0.48rem;
+                height: 0.48rem;
+                margin-right: 0.2rem;
+            }
+        }
+
+        img {
+            width: 0.28rem;
+            height: 0.28rem;
+        }
+
+        &:first-child {
+            border-top: 0.02rem solid #e8e8e8;
+        }
+    }    
+}
+
+
+
+.footer-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    border-top: 0.02rem solid #e8e8e8;
+    background: #fff;
+
+    a {
+        display: flex;
+        height: 1rem;
+        width: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 0.24rem;
+
+        .footer-icon {
+            width: 0.48rem;
+            height: 0.48rem;            
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    } 
+    
+    li {
+        &:nth-child(1) {
+            .footer-icon {
+                background-image: url('../../images/home_table_ic_Home_s2x.png');
+            }
+        }
+
+        &:nth-child(2) {
+            .footer-icon {
+                background-image: url('../../images/home_table_ic_Shopping@2x.png');
+            }
+        }
+
+        &:nth-child(3) {
+            .footer-icon {
+                background-image: url('../../images/home_table_ic_Shop@2x.png');
+            }
+        }
+
+        &:nth-child(4) {
+            .footer-icon {
+                background-image: url('../../images/home_table_ic_Megap@2x.png');
+            }
+        }
+
+        &:nth-child(5) {
+            .footer-icon {
+                background-image: url('../../images/home_table_ic_Avata@2x.png');
+            }
+        }
+
+        &.active {
+            color: #57aaff;
+            &:nth-child(1) {
+                .footer-icon {
+                    background-image: url('../../images/home_table_ic_Home@2x.png');
+                }
+            }
+
+            &:nth-child(2) {
+                .footer-icon {
+                    background-image: url('../../images/home_table_ic_Shopping_s@2x.png');
+                }
+            }
+
+            &:nth-child(3) {
+                .footer-icon {
+                    background-image: url('../../images/home_table_ic_Shop_s@2x.png');
+                }
+            }
+
+            &:nth-child(4) {
+                .footer-icon {
+                    background-image: url('../../images/home_table_ic_Megap_s@2x.png');
+                }
+            }
+
+            &:nth-child(5) {
+                .footer-icon {
+                    background-image: url('../../images/home_table_ic_Avata_s@2x.png');
+                }
+            }
+        }
+    }    
+}
+
+.contact-us {
+    font-size: 0.32rem;
+    color: #333;
+    margin-top: 0.38rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}

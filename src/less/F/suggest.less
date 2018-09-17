@@ -1,0 +1,98 @@
+body, html {
+    background: #f7f7f7;
+}
+
+.header {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    position: relative;
+    background: #fff;
+
+    img {
+        width: 0.44rem;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.suggest-input {
+    background: #fff;
+    textarea {
+        height: 3.45rem;
+        width: 100%;
+        border: 0;
+        resize: none;
+        padding: 0.3rem;
+        box-sizing: border-box;
+        font-size: 0.34rem;
+        outline: none;
+    }
+
+    .add-img-box {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0.5rem 0.3rem;
+        .add-img-btn {
+            width: 1.16rem;
+            height: 1.16rem;
+            display: block;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-image: url('../../images/f2_ic_add@2x.png');
+            margin-right: 0.3rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .file-input {
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+
+        .img-item-box {
+            width: 1.16rem;
+            height: 1.16rem;
+            margin-right: 0.3rem;
+            position: relative;
+            margin-bottom: 0.2rem;
+
+            & > img {
+                width: 1.16rem;
+                height: 1.16rem;
+                border-radius: 0.05rem;
+            }
+
+            .delete-img-btn {
+                position: absolute;
+                right: -0.1rem;
+                top: -0.1rem;
+                width: 0.24rem;
+                height: 0.24rem;
+                display: block;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-image: url('../../images/f2_ic_dele@2x.png');
+            }
+        }
+    }
+    
+}
+
+.submit-btn {
+    width: 6rem;
+    height: 0.9rem;
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 0.9rem;
+    border-radius: 0.1rem;
+    margin: 1rem auto;
+    background: #5598ff;
+}
+

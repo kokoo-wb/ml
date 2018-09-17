@@ -1,0 +1,109 @@
+body,
+html {
+  background: #f7f7f7;
+}
+.header {
+  height: 0.9rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.36rem;
+  border-bottom: 0.02rem solid #e8e8e8;
+  position: relative;
+  background: #fff;
+}
+.header img {
+  width: 0.44rem;
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.check-list,
+.message-list {
+  margin-bottom: 0.3rem;
+}
+.check-list li,
+.message-list li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1rem;
+  background: #fff;
+  border-bottom: 0.02rem solid #e8e8e8;
+  padding: 0 0.4rem;
+  font-size: 0.28rem;
+}
+.check-list li img,
+.message-list li img {
+  width: 0.28rem;
+  height: 0.28rem;
+}
+.check-list li .language-choose,
+.message-list li .language-choose {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.check-list li .language-choose img,
+.message-list li .language-choose img {
+  margin-left: 0.05rem;
+}
+.check-list li {
+  border-top: 0.02rem solid #e8e8e8;
+}
+.check-list li .check-update {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.check-list li .check-update span {
+  display: block;
+  width: 0.12rem;
+  height: 0.12rem;
+  background: #ff5151;
+  border-radius: 0.5rem;
+}
+.check-list li .check-update img {
+  margin-left: 0.05rem;
+}
