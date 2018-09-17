@@ -50,26 +50,66 @@
         <img class="seller-btn" src="../../images/head_icon_shop@2x.png" />
     </div>
 
+    <div class="message-content">
+        <div class="message-box message-others">
+            <img class="head-img" src="../../images/pic2.png" />
+            <div class="message">
+                <p class="message-author">莉迪亚</p>
+                <!-- 文字消息 -->
+                <div class="message-word">您好，可以交个朋友吗？</div>
+            </div>
+        </div>
+        <div class="time-line">
+            <span>14:00</span>
+        </div>
+        <div class="message-box message-others">
+            <img class="head-img" src="../../images/pic2.png" />
+            <div class="message">
+                <p class="message-author">莉迪亚</p>
+                <!-- 图片消息 -->
+                <img class="message-img" src="../../images/goods1.png" />
+            </div>
+        </div>
+
+        <div class="message-box message-self">
+            <img class="head-img" src="../../images/pic2.png" />
+            <div class="message">
+                <p class="message-author">莉迪亚</p>
+                <!-- 文字消息 -->
+                <div class="message-word">您好，可以交个朋友吗？</div>
+            </div>
+        </div>
+
+        <div class="message-box message-self">
+            <img class="head-img" src="../../images/pic2.png" />
+            <div class="message">
+                <p class="message-author">莉迪亚</p>
+                <!-- 图片消息 -->
+                <img class="message-img" src="../../images/goods1.png" />
+            </div>
+        </div>
+    </div>
+
     <div class="footer">
         <div class="msg-box">
-            <div class="turn-voice-btn">
+            <div class="turn-voice-btn" data="0">
                 <img src="../../images/e2_chat_ic_01@2x.png" />
             </div>
-            <!-- <input type="text" class="messge-input" placeholder="请输入文字" /> -->
+            <input type="text" class="messge-input" placeholder="请输入文字" />
             <a class="voice-btn">按住说话</a>
             <div class="send-box">
-                <!-- <img class="add-file-btn" src="../../images/e2_chat_ic_02@2x.png" /> -->
+                <img class="add-file-btn" src="../../images/e2_chat_ic_02@2x.png" />
                 <a class="send-btn">发送</a>
             </div>
         </div>
 
-        <div class="file-box">
+        <div class="file-box file-box-hide" data="0">
             <a>
-                <img src="../../images/" />
+                <img src="../../images/e2_chat_ic_03@2x.png" />
                 <p>相册</p>
             </a>
             <a>
-                <img src="../../images/" />
+                <img src="../../images/e2_chat_ic_04@2x.png" />
                 <p>拍摄</p>
             </a>
         </div>
@@ -79,6 +119,35 @@
 <script src="../../lib/zepto/zepto.min.js"></script>
 
 <script>
+    $('.add-file-btn').click(function() {
+        if ($('.file-box').attr('data') == '0') {
+            $('.file-box').removeClass('file-box-hide').attr('data', '1');
+        } else {
+            $('.file-box').addClass('file-box-hide').attr('data', '0');
+        }
+    });
+
+    $('.turn-voice-btn').click(function() {
+        if ($(this).attr('data') == '0') {
+            $('.voice-btn').show();
+            $('.messge-input').hide();
+            $(this).attr('data', '1');
+        } else {
+            $('.voice-btn').hide();
+            $('.messge-input').show();
+            $(this).attr('data', '0');
+        }
+    });
+
+    $('.messge-input').keyup(function() {
+        if ($.trim($(this).val()) != '') {
+            $('.send-btn').show();
+            $('.add-file-btn').hide();
+        } else {
+            $('.send-btn').hide();
+            $('.add-file-btn').show();
+        }
+    });
 </script>
 
 </html>

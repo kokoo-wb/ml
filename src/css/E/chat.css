@@ -44,6 +44,118 @@ html {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+.message-content {
+  padding: 1.3rem 0.3rem;
+}
+.message-content .message-box {
+  margin-top: 0.3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.message-content .message-box .message .message-author {
+  font-size: 0.36rem;
+}
+.message-content .message-box .message .message-word {
+  max-width: 4.5rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.2rem 0.3rem;
+  background: #fff;
+  font-size: 0.3rem;
+  color: #5a5a5a;
+  min-width: 2.5rem;
+  margin-top: 0.2rem;
+  border-radius: 0.08rem;
+  border: 0.02rem solid #e8e8e8;
+}
+.message-content .message-box .message .message-img {
+  max-width: 3rem;
+  max-height: 3rem;
+  margin-top: 0.2rem;
+}
+.message-content .message-others .message {
+  margin-left: 0.3rem;
+}
+.message-content .message-self {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.message-content .message-self .message {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 0.3rem;
+}
+.message-content .message-self .message .message-word {
+  max-width: 4.5rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.2rem 0.3rem;
+  background: #5589ff;
+  font-size: 0.3rem;
+  color: #fff;
+  min-width: 2.5rem;
+  margin-top: 0.2rem;
+  border-radius: 0.08rem;
+}
+.message-content .head-img {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+}
+.message-content .time-line {
+  margin: 0.4rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.message-content .time-line span {
+  display: block;
+  color: #fff;
+  background: #acacac;
+  width: 1.1rem;
+  height: 0.5rem;
+  text-align: center;
+  line-height: 0.5rem;
+  border-radius: 0.06rem;
+  font-size: 0.24rem;
+}
 .footer {
   background: #fff;
   position: fixed;
@@ -91,6 +203,7 @@ html {
   outline: none;
 }
 .footer .msg-box .voice-btn {
+  display: none;
   width: 4.6rem;
   height: 0.66rem;
   color: #333;
@@ -124,7 +237,7 @@ html {
   height: 0.54rem;
 }
 .footer .msg-box .send-box .send-btn {
-  display: block;
+  display: none;
   width: 0.9rem;
   text-align: center;
   color: #fff;
@@ -135,4 +248,50 @@ html {
 }
 .footer .file-box {
   height: 2.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .file-box a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1rem;
+}
+.footer .file-box a img {
+  width: 1rem;
+  height: 1rem;
+}
+.footer .file-box a p {
+  margin-top: 0.28rem;
+  color: #5598ff;
+}
+.footer .file-box-hide {
+  display: none;
 }

@@ -31,6 +31,92 @@ body, html {
     }
 }
 
+.message-content {
+    padding: 1.3rem 0.3rem;
+
+    .message-box {
+        margin-top: 0.3rem;
+        display: flex;
+
+        .message {
+            .message-author {
+                font-size: 0.36rem;
+            }
+
+            .message-word {
+                max-width: 4.5rem;
+                box-sizing: border-box;
+                padding: 0.2rem 0.3rem;
+                background: #fff;
+                font-size: 0.3rem;
+                color: #5a5a5a;
+                min-width: 2.5rem;
+                margin-top: 0.2rem;
+                border-radius: 0.08rem;
+                border: 0.02rem solid #e8e8e8;
+            }
+
+            .message-img {
+                max-width: 3rem;
+                max-height: 3rem;
+                margin-top: 0.2rem;
+            }
+        }
+    }
+
+    .message-others {
+        .message {
+            margin-left: 0.3rem;
+        }
+    }
+
+    .message-self {
+        flex-direction: row-reverse;
+        .message {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 0.3rem;
+
+            .message-word {
+                max-width: 4.5rem;
+                box-sizing: border-box;
+                padding: 0.2rem 0.3rem;
+                background: #5589ff;
+                font-size: 0.3rem;
+                color: #fff;
+                min-width: 2.5rem;
+                margin-top: 0.2rem;
+                border-radius: 0.08rem;
+            }
+        }
+    }
+
+    .head-img {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 1rem;
+    }
+
+    .time-line {
+        margin: 0.4rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            display: block;
+            color: #fff;
+            background: #acacac;
+            width: 1.1rem;
+            height: 0.5rem;
+            text-align: center;
+            line-height: 0.5rem;
+            border-radius: 0.06rem;
+            font-size: 0.24rem;
+        }
+    }
+}
+
 .footer {
     background: #fff;
     position: fixed;
@@ -68,6 +154,7 @@ body, html {
         }
 
         .voice-btn {
+            display: none;
             width: 4.6rem;
             height: 0.66rem;
             color: #333;
@@ -90,7 +177,7 @@ body, html {
             }
 
             .send-btn {
-                display: block;
+                display: none;
                 width: 0.9rem;
                 text-align: center;
                 color: #fff;
@@ -104,6 +191,30 @@ body, html {
 
     .file-box {
         height: 2.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 1rem;
+            
+            img {
+                width: 1rem;
+                height: 1rem;
+            }
+
+            p {
+                margin-top: 0.28rem;
+                color: #5598ff;
+            }
+        }
+    }
+
+    .file-box-hide {
+        display: none;
     }
     
 }
