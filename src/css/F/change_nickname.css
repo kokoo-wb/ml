@@ -1,0 +1,56 @@
+body,
+html {
+  background: #f7f7f7;
+}
+.header {
+  height: 0.9rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.36rem;
+  background: #fff;
+  border-bottom: 0.02rem solid #e8e8e8;
+  position: fixed;
+  top: 0;
+  width: 7.5rem;
+}
+.header .back-btn {
+  width: 0.44rem;
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.header .save-btn {
+  position: absolute;
+  right: 0.3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 0.3rem;
+}
+.nickname-input {
+  width: 7.5rem;
+  height: 1rem;
+  border: 0;
+  border-bottom: 0.02rem solid #e8e8e8;
+  padding: 0 0.3rem;
+  margin-top: 0.92rem;
+  outline: none;
+  font-size: 0.28rem;
+}
