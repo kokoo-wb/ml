@@ -1,0 +1,229 @@
+body,
+html {
+  background: #f7f7f7;
+}
+.header {
+  height: 0.9rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.36rem;
+  border-bottom: 0.02rem solid #e8e8e8;
+  position: relative;
+  background: #fff;
+}
+.header img {
+  width: 0.44rem;
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.paynum-select-box {
+  overflow: hidden;
+  padding: 0 0.35rem;
+  padding-bottom: 0.4rem;
+}
+.paynum-select-box li {
+  float: left;
+  width: 2rem;
+  height: 0.9rem;
+  text-align: center;
+  line-height: 0.9rem;
+  color: #333;
+  background: #fff;
+  margin-right: 0.4rem;
+  border-radius: 0.12rem;
+  font-size: 0.36rem;
+  margin-top: 0.4rem;
+}
+.paynum-select-box li.active {
+  background: #358cf6;
+  color: #fff;
+}
+.paynum-select-box li:nth-child(3n) {
+  margin-right: 0;
+}
+.pay-select-box {
+  background: #fff;
+}
+.pay-select-box .pay-select-item {
+  min-height: 1rem;
+  width: 6.9rem;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.2rem 0.1rem;
+  border-bottom: 0.02rem solid #e8e8e8;
+  font-size: 0.32rem;
+  position: relative;
+}
+.pay-select-box .pay-select-item .pay-way-img {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.pay-select-box .pay-select-item .check-img {
+  width: 0.48rem;
+  height: 0.48rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: none;
+}
+.pay-select-box .pay-select-item .pay-name {
+  margin-left: 0.3rem;
+  line-height: 1em;
+}
+.pay-select-box .pay-select-item .pay-name .pay-desc {
+  color: #999;
+  margin-top: 0.2rem;
+}
+.pay-select-box .pay-select-item:last-child {
+  border: 0;
+}
+.pay-select-box .pay-select-active .check-img {
+  display: block;
+}
+.paynum-box {
+  background: #fff;
+}
+.paynum-box .input-box-item {
+  height: 1.16rem;
+  width: 6.9rem;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0.1rem;
+}
+.paynum-box .input-box-item span {
+  font-size: 0.48rem;
+}
+.paynum-box .input-box-item input {
+  height: 0.9rem;
+  width: 6.2rem;
+  border: 0;
+  outline: none;
+  font-size: 0.48rem;
+  margin-left: 0.15rem;
+  line-height: 0.9rem;
+  vertical-align: middle;
+}
+.paynum-box .input-box-item input::-webkit-input-placeholder {
+  font-size: 0.3rem;
+  position: relative;
+  bottom: 0.06rem;
+}
+.pay-way {
+  height: 1.12rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-size: 0.32rem;
+  padding-left: 0.3rem;
+  background: #edf2f7;
+  width: 1.4rem;
+  height: 0.6rem;
+  border-left: 0.1rem solid #5598ff;
+  font-size: 0.26rem;
+  color: #358cf6;
+  margin: 0.4rem 0;
+}
+.pay-btn {
+  width: 6rem;
+  height: 0.9rem;
+  display: block;
+  background: #5598ff;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.9rem;
+  border-radius: 0.08rem;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+.modal-success img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.common_loading_msg {
+  min-width: 3rem;
+  width: 3rem;
+  height: 2.9rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

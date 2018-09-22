@@ -1,0 +1,96 @@
+.header {
+  height: 0.9rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.36rem;
+  border-bottom: 0.02rem solid #e8e8e8;
+  position: relative;
+  background: #fff;
+}
+.header img {
+  width: 0.44rem;
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.wallet-money {
+  width: 6rem;
+  height: 4rem;
+  background-image: url(../../images/f5_ic_pg@2x.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 0.6rem;
+  border-radius: 0.1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wallet-money label {
+  font-size: 0.26rem;
+  color: #999;
+}
+.wallet-money p {
+  font-size: 0.72rem;
+  color: #5598ff;
+  margin-bottom: 0.5rem;
+}
+.login-btn {
+  width: 6rem;
+  height: 0.9rem;
+  display: block;
+  background: #5598ff;
+  color: #fff;
+  text-align: center;
+  line-height: 0.9rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 0.08rem;
+}
+.regist-btn {
+  width: 6rem;
+  height: 0.9rem;
+  display: block;
+  border: 0.02rem #5598ff solid;
+  color: #5598ff;
+  text-align: center;
+  line-height: 0.9rem;
+  margin: 0 auto;
+  margin-top: 0.2rem;
+  border-radius: 0.08rem;
+}

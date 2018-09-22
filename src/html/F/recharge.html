@@ -16,9 +16,9 @@
     <meta name="format-detection" content="telephone=no" />
 
     <link rel="stylesheet" href="../../css/global.css" />
-    <link rel="stylesheet" href="../../css/B/transfer_accounts.css" />
+    <link rel="stylesheet" href="../../css/F/recharge.css" />
 
-    <title>转账</title>
+    <title>充值</title>
 
     <script>
         initScreen();
@@ -45,33 +45,30 @@
 
 <body>
     <div class="header">
-        <p>转账</p>
-    </div>
-
-    <div class="logo-box">
-        <img src="../../images/login_ic_logo@2x.png" />
-        <p>紫鲸互联</p>
+        <img src="../../images/back.png" />
+        <p>充值</p>
     </div>
 
     <div class="paynum-box">
         <div class="input-box-item">
             <span>￥</span>
-            <input class="phone-input" type="text" placeholder="请输入手机号" />
+            <input class="phone-input" type="text" placeholder="请输入需要的金额" />
         </div>
     </div>
 
-    <div class="pay-way">钱包</div>
+    <ul class="paynum-select-box">
+        <li class="active">￥100</li>
+        <li>￥200</li>
+        <li>￥500</li>
+        <li>￥1000</li>
+        <li>￥2000</li>
+        <li>￥3000</li>
+    </ul>
+
+    <div class="pay-way">支付方式</div>
 
     <div class="pay-select-box">
         <div class="pay-select-item pay-select-active">
-            <img class="pay-way-img" src="../../images/iocn_balance@2x.png" />
-            <div class="pay-name">
-                <p>钱包支付</p>
-                <p class="pay-desc">可用余额：￥20.00</p>
-            </div>
-            <img class="check-img" src="../../images/btn_Check_blue@2x.png" />
-        </div>
-        <div class="pay-select-item">
             <img class="pay-way-img" src="../../images/iocn_wechat@2x.png" />
             <div class="pay-name">
                 <p>微信支付</p>
@@ -87,15 +84,20 @@
         </div>
     </div>
 
-    <a class="login-btn">登录</a>
+    <a class="pay-btn">充值</a>
 </body>
 
 <script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../js/common.js"></script>
 
 <script>
     $('.pay-select-item').click(function() {
         $('.pay-select-item').removeClass('pay-select-active');
         $(this).addClass('pay-select-active');
+    });
+
+    $('.pay-btn').click(function() {
+        commonPlugins.messageModal('<div class="modal-success"><img src="../../images/d3_ic_ok@2x.png" /><p>修改成功</p><div>');
     });
 </script>
 

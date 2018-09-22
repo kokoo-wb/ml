@@ -130,15 +130,26 @@ textarea {
     margin: 0 auto;
     margin-top: 4.04rem;
     border-radius: 0.15rem;
+    text-align: center;
 }
 
-.alert-title {
-    font-size: 0.32rem;
+.alert-content-msg {
+    
     padding: 0.3rem;
     display: flex;
     height: 1.8rem;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+    .alert-title {
+        font-size: 0.32rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .alert-desc {
+        font-size: 0.26rem;
+    }
 }
 
 .alert-ok-btn {
@@ -192,3 +203,55 @@ textarea {
         overflow-x: hidden;
     }
 }
+
+.select-modal {
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 7.5rem;
+    top: 0;
+    bottom: 0;
+
+    .select-mocal-content {
+        position: absolute;
+        bottom: 0;
+        width: 7.5rem;
+
+        ul {
+            background: #fff;
+            width: 6.8rem;
+            margin: 0 auto;
+            border-radius: 0.08rem;            
+
+            li {
+                height: 0.8rem;
+                text-align: center;
+                line-height: 0.8rem;
+                margin: 0 0.3rem;
+                border-bottom: 0.02rem solid #e8e8e8;
+                color: #394456;
+
+                &:last-child {
+                    border: 0;
+                }
+
+                &.active {
+                    color: #3992f8;
+                }
+            }
+        }
+
+        a {
+            background: #fff;
+            width: 6.8rem;
+            height: 0.8rem;
+            text-align: center;
+            line-height: 0.8rem;
+            border-radius: 0.08rem;
+            display: block;
+            margin: 0.1rem auto 0.2rem auto;
+            color: #394456;
+        }
+    }
+}
+
+

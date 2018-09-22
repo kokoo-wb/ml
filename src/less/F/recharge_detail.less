@@ -1,0 +1,57 @@
+body, html {
+    background: #f7f7f7;
+}
+
+.header {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    position: relative;
+    background: #fff;
+
+    img {
+        width: 0.44rem;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.message-list {
+    li {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 1.7rem;
+        background: #fff;
+        border-bottom: 0.02rem solid #e8e8e8;
+        padding: 0 0.4rem;
+
+        p {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.06rem 0;
+
+            .title {
+                font-size: 0.36rem;
+            }
+
+            .num {
+                color: #ff5555;
+                font-size: 0.36rem;
+            }
+
+            .time, 
+            .payway {
+                font-size: 0.26rem;
+                color: #999;
+            }
+        }
+    }    
+}
+
+

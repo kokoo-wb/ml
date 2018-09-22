@@ -97,7 +97,9 @@ var commonPlugins = function() {
         $('body').css('overflow', 'hidden');
         $('body').append('<div class="alert-modal">' +
             '<div class="alert-content">' +
-            '<p class="alert-title">' + obj.content + '</p>' +
+            '<div class="alert-content-msg">' +
+            (obj.title ? ('<p class="alert-title">' + obj.title + '</p>') : '') +
+            '<p class="alert-desc">' + obj.content + '</p></div>' +
             '<a class="alert-ok-btn">' + (obj.btnName || '确定') + '</a></div></div>');
 
         if (obj && obj.onOk) {
@@ -150,6 +152,51 @@ var commonPlugins = function() {
         $('.common_loading').remove();
     }
 
+
+    /**
+     * [弹出选择框]
+     * @param [type] name [desc]
+     * @return [type] name [desc]
+     */
+    var selectModal = function(options) {
+        if (options.list && options.list.length) {
+            $('body').css('overflow', 'hidden');
+            var html = '<div class="select-modal">' +
+                '<div class="select-mocal-content">' +
+                '<ul>';
+            for (var i = 0; i < options.list.length; i++) {
+                html += '<li class="active" data="' + i + '">' + options.list[i].name + '</li>'
+            }
+            html += '</ul>' +
+                '<a class="cancel-btn">取消</a>' +
+                '</div>' +
+                '</div>'
+            $('body').append(html);
+
+            $('.cancel-btn').on('click', function() {
+                closeSelectModal();
+            });
+
+            $('.select-mocal-content ul li').on('click', function() {
+                var currIndex = parseInt($(this).attr('data'));
+                if (options.onOk) {
+                    options.onOk(options.list[currIndex]);
+                }
+                closeSelectModal();
+            });
+        }
+    }
+
+    /**
+     * [关闭选择框]
+     * @param [type] name [desc]
+     * @return [type] name [desc]
+     */
+    var closeSelectModal = function() {
+        $('body').css('overflow', 'visible');
+        $('.select-modal').remove();
+    }
+
     return {
         confrimModal: function(obj) {
             return confrimModal(obj);
@@ -168,6 +215,12 @@ var commonPlugins = function() {
         },
         hideMessage: function() {
             return hideMessage();
+        },
+        selectModal: function(arr) {
+            return selectModal(arr);
+        },
+        closeSelectModal: function() {
+            return closeSelectModal();
         }
     }
 }();

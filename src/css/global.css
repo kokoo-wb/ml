@@ -122,9 +122,9 @@ textarea {
   margin: 0 auto;
   margin-top: 4.04rem;
   border-radius: 0.15rem;
+  text-align: center;
 }
-.alert-title {
-  font-size: 0.32rem;
+.alert-content-msg {
   padding: 0.3rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -142,6 +142,20 @@ textarea {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.alert-content-msg .alert-title {
+  font-size: 0.32rem;
+  margin-bottom: 0.4rem;
+}
+.alert-content-msg .alert-desc {
+  font-size: 0.26rem;
 }
 .alert-ok-btn {
   color: #0075ff;
@@ -187,4 +201,47 @@ textarea {
     margin: 0 auto;
     overflow-x: hidden;
   }
+}
+.select-modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 7.5rem;
+  top: 0;
+  bottom: 0;
+}
+.select-modal .select-mocal-content {
+  position: absolute;
+  bottom: 0;
+  width: 7.5rem;
+}
+.select-modal .select-mocal-content ul {
+  background: #fff;
+  width: 6.8rem;
+  margin: 0 auto;
+  border-radius: 0.08rem;
+}
+.select-modal .select-mocal-content ul li {
+  height: 0.8rem;
+  text-align: center;
+  line-height: 0.8rem;
+  margin: 0 0.3rem;
+  border-bottom: 0.02rem solid #e8e8e8;
+  color: #394456;
+}
+.select-modal .select-mocal-content ul li:last-child {
+  border: 0;
+}
+.select-modal .select-mocal-content ul li.active {
+  color: #3992f8;
+}
+.select-modal .select-mocal-content a {
+  background: #fff;
+  width: 6.8rem;
+  height: 0.8rem;
+  text-align: center;
+  line-height: 0.8rem;
+  border-radius: 0.08rem;
+  display: block;
+  margin: 0.1rem auto 0.2rem auto;
+  color: #394456;
 }

@@ -1,0 +1,159 @@
+.header {
+  height: 0.9rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.36rem;
+  background: #fff;
+  border-bottom: 0.02rem solid #e8e8e8;
+  position: fixed;
+  top: 0;
+  width: 7.5rem;
+}
+.header .back-btn {
+  width: 0.44rem;
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.header .save-btn {
+  position: absolute;
+  right: 0.3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 0.3rem;
+  color: #5598ff;
+}
+.withdraw-cash-box {
+  width: 6.83rem;
+  height: 5.8rem;
+  background: #f7f7f7;
+  padding: 0 0.4rem;
+  margin: 0 auto;
+  margin-top: 1.43rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.1rem;
+}
+.withdraw-cash-box .withdraw-cash-top {
+  height: 1.48rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 0.02rem solid #e8e8e8;
+  font-size: 0.3rem;
+  padding: 0 0.2rem;
+}
+.withdraw-cash-box .withdraw-cash-center {
+  height: 3.06rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 0.02rem solid #e8e8e8;
+  font-size: 0.3rem;
+  padding: 0 0.2rem;
+}
+.withdraw-cash-box .withdraw-cash-center .withdraw-cash-input {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.5rem;
+}
+.withdraw-cash-box .withdraw-cash-center .withdraw-cash-input span {
+  position: relative;
+  right: 0.18rem;
+}
+.withdraw-cash-box .withdraw-cash-center .withdraw-cash-input input {
+  height: 1rem;
+  width: 4.5rem;
+  font-size: 1rem;
+  border: 0;
+  background: none;
+  outline: none;
+}
+.withdraw-cash-box .withdraw-cash-bottom {
+  height: 1.48rem;
+  font-size: 0.3rem;
+  padding: 0 0.2rem;
+  margin-top: 0.3rem;
+}
+.withdraw-cash-box .withdraw-cash-bottom a {
+  color: #5589ff;
+}
+.desc {
+  margin: 0 0.64rem;
+  margin-top: 0.5rem;
+  color: #999;
+  font-size: 0.24rem;
+  line-height: 0.45rem;
+}
+.desc .real-money-num {
+  color: #eb3349;
+}
+.desc .desc-inner {
+  margin-left: 0.45rem;
+}
+.withdraw-btn {
+  width: 6rem;
+  color: #fff;
+  background: #5589ff;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.1rem;
+  border-radius: 0.1rem;
+}

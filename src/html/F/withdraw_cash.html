@@ -16,9 +16,9 @@
     <meta name="format-detection" content="telephone=no" />
 
     <link rel="stylesheet" href="../../css/global.css" />
-    <link rel="stylesheet" href="../../css/B/transfer_accounts.css" />
+    <link rel="stylesheet" href="../../css/F/withdraw_cash.css" />
 
-    <title>转账</title>
+    <title>提现</title>
 
     <script>
         initScreen();
@@ -45,57 +45,51 @@
 
 <body>
     <div class="header">
-        <p>转账</p>
+        <img class="back-btn" src="../../images/back.png" />
+        <p>提现</p>
+        <a class="save-btn">账户管理</a>
     </div>
 
-    <div class="logo-box">
-        <img src="../../images/login_ic_logo@2x.png" />
-        <p>紫鲸互联</p>
-    </div>
-
-    <div class="paynum-box">
-        <div class="input-box-item">
-            <span>￥</span>
-            <input class="phone-input" type="text" placeholder="请输入手机号" />
+    <div class="withdraw-cash-box">
+        <div class="withdraw-cash-top">
+            <span>提现到</span>
+            <span>支付宝(136****2288)</span>
         </div>
-    </div>
-
-    <div class="pay-way">钱包</div>
-
-    <div class="pay-select-box">
-        <div class="pay-select-item pay-select-active">
-            <img class="pay-way-img" src="../../images/iocn_balance@2x.png" />
-            <div class="pay-name">
-                <p>钱包支付</p>
-                <p class="pay-desc">可用余额：￥20.00</p>
+        <div class="withdraw-cash-center">
+            <label>提现金额</label>
+            <div class="withdraw-cash-input">
+                <span>￥</span>
+                <input />
             </div>
-            <img class="check-img" src="../../images/btn_Check_blue@2x.png" />
         </div>
-        <div class="pay-select-item">
-            <img class="pay-way-img" src="../../images/iocn_wechat@2x.png" />
-            <div class="pay-name">
-                <p>微信支付</p>
-            </div>
-            <img class="check-img" src="../../images/btn_Check_blue@2x.png" />
-        </div>
-        <div class="pay-select-item">
-            <img class="pay-way-img" src="../../images/iocn_alipay@2x.png" />
-            <div class="pay-name">
-                <p>支付宝</p>
-            </div>
-            <img class="check-img" src="../../images/btn_Check_blue@2x.png" />
+        <div class="withdraw-cash-bottom">
+            <span>可提现金额，10000，</span>
+            <a>全部提现</a>
         </div>
     </div>
 
-    <a class="login-btn">登录</a>
+    <div class="desc">
+        <p>说明：</p>
+        <p>1、提现最低金额为100元</p>
+        <p>2、因第三方提现费率，平台代扣3%手续费，</p>
+        <p class="desc-inner">实际到账<span class="real-money-num">0.00</span>元</p>
+    </div>
+
+    <a class="withdraw-btn">提现</a>
 </body>
-
 <script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../js/common.js"></script>
 
 <script>
-    $('.pay-select-item').click(function() {
-        $('.pay-select-item').removeClass('pay-select-active');
-        $(this).addClass('pay-select-active');
+    $('.withdraw-btn').click(function() {
+        commonPlugins.alertModal({
+            btnName: '去绑定',
+            title: '提示',
+            content: '您尚未绑定账号，如需提现，请先绑定',
+            onOk: function() {
+                commonPlugins.closeAlertModal()
+            }
+        });
     });
 </script>
 
