@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/F/order.css" />
+
+    <title>订单详情</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../../images/back.png" />
+        <p>订单详情</p>
+    </div>
+
+    <div class="order-content">
+        <div class="order-no">
+            <span>订单号：20170315150023123456</span>
+            <span>已完成</span>
+        </div>
+
+        <div class="user-contact">
+            <div class="user-phone">
+                <span>联系人：林小呆</span>
+                <span>15015418964</span>
+            </div>
+            <p>地址：广东省广州市天河区棠安路188号乐天大厦8楼808-812</p>
+        </div>
+    </div>
+
+    <div class="goods-box">
+        <div class="store-name">
+            <span>店铺名称</span>
+            <img src="../../images/b3_icon_arrow@2x.png" />
+        </div>
+        <div class="goods-msg-box">
+            <img src="../../images/pic2.png" />
+            <div class="goods-msg">
+                <p>商品名称商品名称商品名称商品名称商品名称</p>
+                <p class="goods-price">
+                    <span>￥59.99</span>
+                    <span>x1</span>
+                </p>
+            </div>
+        </div>
+        <div class="goods-msg-box">
+            <img src="../../images/pic2.png" />
+            <div class="goods-msg">
+                <p>商品名称商品名称商品名称商品名称商品名称</p>
+                <p class="goods-price">
+                    <span>￥59.99</span>
+                    <span>x1</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <ul class="order-detail-list">
+        <li>商品总价：￥59.99</li>
+        <li>订单总价：59.99</li>
+        <li>支付方式：支付宝/微信/钱包</li>
+        <li>交易流水号：1234567</li>
+    </ul>
+    <ul class="order-detail-list">
+        <li>申请时间：2018-03-15 15:00:00</li>
+        <li>退款金额：￥59.59</li>
+        <li>订单总价：59.99</li>
+        <li>退款原因：这里是原因这里是原因这里是原因</li>
+        <li class="img-list-box">
+            <p>图片：</p>
+            <div class="img-list">
+                <img src="../../images/pic2.png" />
+                <img src="../../images/pic2.png" />
+                <img src="../../images/pic2.png" />
+                <img src="../../images/pic2.png" />
+                <img src="../../images/pic2.png" />
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>
