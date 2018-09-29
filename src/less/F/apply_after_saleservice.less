@@ -1,0 +1,218 @@
+body, html {
+    background: #f7f7f7;
+}
+
+.header {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    position: relative;
+    background: #fff;
+
+    img {
+        width: 0.44rem;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+.goods-box {      
+    margin-bottom: 0.3rem;
+    background: #fff;
+
+    .store-name {
+        height: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0.3rem;
+        border-bottom: 0.02rem solid #e8e8e8;
+
+        img {
+            width: 0.28rem;
+            height: 0.28rem;
+        }
+    }    
+
+    .goods-msg-box {
+        padding: 0 0.47rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 2.3rem;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 0.06rem;
+        }
+
+        .goods-msg {
+            height: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 0.2rem;
+
+            .goods-price {
+                color: #ff2b2b;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                font-size: 0.28rem;
+
+                span:last-child {
+                    color: #666;
+                    font-size: 0.26rem;
+                }
+            }
+        }
+    }
+}    
+
+
+.after-saleservice {
+    background: #fff;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem 0;
+
+    .after-saleservice-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.6rem;
+        a {
+            display: block;
+            width: 3rem;
+            height: 0.76rem;
+            text-align: center;
+            line-height: 0.76rem;
+            margin: 0 0.15rem;
+            font-size: 0.32rem;
+            border-radius: 0.06rem;
+            border: 0.02rem solid #5598ff;
+            color: #5598ff;
+
+            &.active {
+                height: 0.8rem;
+                line-height: 0.8rem;
+                background: #5598ff;
+                color: #fff;
+            }
+        }
+    }
+
+    .apply-label {
+        height: 1.12rem;
+        position: relative;
+        font-size: 0.32rem;
+        padding: 0 0.22rem;
+        background: #f5f9ff;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        border-left: 0.1rem solid #5598ff;
+        font-size: 0.26rem;
+        color: #358cf6;
+        margin-bottom: 0.3rem;
+        display: inline-block;
+    }
+
+    input {
+        width: 6.8rem;
+        height: 0.8rem;
+        background: #f5f5f5;
+        font-size: 0.28rem;
+        border: 0;
+        outline: none;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0 0.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    textarea {
+        width: 6.8rem;
+        height: 3rem;
+        background: #f5f5f5;
+        font-size: 0.28rem;
+        border: 0;
+        outline: none;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0.3rem 0.2rem;
+    }
+
+    .add-img-box {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0.2rem 0.3rem 0.1rem 0.3rem;
+        .add-img-btn {
+            width: 1.16rem;
+            height: 1.16rem;
+            display: block;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-image: url('../../images/f2_ic_add@2x.png');
+            margin-right: 0.3rem;
+            margin-bottom: 0.2rem;
+        }        
+
+        .file-input {
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+
+        .img-item-box {
+            width: 1.16rem;
+            height: 1.16rem;
+            margin-right: 0.3rem;
+            position: relative;
+            margin-bottom: 0.2rem;
+
+            & > img {
+                width: 1.16rem;
+                height: 1.16rem;
+                border-radius: 0.05rem;
+            }
+
+            .delete-img-btn {
+                position: absolute;
+                right: -0.1rem;
+                top: -0.1rem;
+                width: 0.24rem;
+                height: 0.24rem;
+                display: block;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-image: url('../../images/f2_ic_dele@2x.png');
+            }
+        }
+    }
+}
+
+.after-saleservice-end {
+    margin-bottom: 1.3rem;
+}
+
+
+.submit-btn {
+    width: 7.5rem;
+    height: 0.98rem;
+    display: block;
+    background: #5598ff;
+    color: #fff;
+    text-align: center;
+    line-height: 0.98rem;
+    position: fixed;
+    bottom: 0;
+}
+

@@ -16,9 +16,9 @@
     <meta name="format-detection" content="telephone=no" />
 
     <link rel="stylesheet" href="../../css/global.css" />
-    <link rel="stylesheet" href="../../css/F/order.css" />
+    <link rel="stylesheet" href="../../css/F/apply_after_saleservice.css" />
 
-    <title>订单详情</title>
+    <title>申请售后</title>
 
     <script>
         initScreen();
@@ -46,38 +46,12 @@
 <body>
     <div class="header">
         <img src="../../images/back.png" />
-        <p>订单详情</p>
-    </div>
-
-    <div class="order-content">
-        <div class="order-no">
-            <span>订单号：20170315150023123456</span>
-            <span>已完成</span>
-        </div>
-
-        <div class="user-contact">
-            <div class="user-phone">
-                <span>联系人：林小呆</span>
-                <span>15015418964</span>
-            </div>
-            <p>地址：广东省广州市天河区棠安路188号乐天大厦8楼808-812</p>
-        </div>
+        <p>申请售后</p>
     </div>
 
     <div class="goods-box">
         <div class="store-name">
-            <span>店铺名称</span>
-            <img src="../../images/b3_icon_arrow@2x.png" />
-        </div>
-        <div class="goods-msg-box">
-            <img src="../../images/pic2.png" />
-            <div class="goods-msg">
-                <p>商品名称商品名称商品名称商品名称商品名称</p>
-                <p class="goods-price">
-                    <span>￥59.99</span>
-                    <span>x1</span>
-                </p>
-            </div>
+            <span>订单号：20170315150023123456</span>
         </div>
         <div class="goods-msg-box">
             <img src="../../images/pic2.png" />
@@ -91,31 +65,67 @@
         </div>
     </div>
 
-    <ul class="order-detail-list">
-        <li>商品总价：￥59.99</li>
-        <li>订单总价：59.99</li>
-        <li>支付方式：支付宝/微信/钱包</li>
-        <li>交易流水号：1234567</li>
-    </ul>
-    <ul class="order-detail-list">
-        <li>申请时间：2018-03-15 15:00:00</li>
-        <li>退款金额：￥59.59</li>
-        <li>订单总价：59.99</li>
-        <li>退款原因：这里是原因这里是原因这里是原因</li>
-        <li class="img-list-box">
-            <p>图片：</p>
-            <div class="img-list">
-                <img src="../../images/pic2.png" />
-                <img src="../../images/pic2.png" />
-                <img src="../../images/pic2.png" />
-                <img src="../../images/pic2.png" />
-                <img src="../../images/pic2.png" />
-            </div>
-        </li>
-    </ul>
+    <div class="after-saleservice">
+        <div class="after-saleservice-btn">
+            <a class="back-goods-btn active">退货</a>
+            <a class="back-money-btn">仅退款</a>
+        </div>
 
-    <!-- 删除订单按钮 -->
-    <!-- <a class="delete-btn">删除订单</a> -->
+        <div class="back-goods-input">
+            <div class="apply-label">申请退货数量</div>
+            <input type="text" placeholder="请输入退货数量" />
+        </div>
+
+        <div class="apply-label">申请退款积分</div>
+        <input type="text" placeholder="请输入退款积分" />
+        <div class="apply-label">申请退款原因</div>
+        <textarea placeholder="请输入退款原因"></textarea>
+    </div>
+
+    <div class="after-saleservice after-saleservice-end">
+        <div class="apply-label">请上传图片</div>
+        <div class="add-img-box">
+            <a class="add-img-btn"></a>
+            <input type="file" class="file-input" />
+            <div class="img-item-box">
+                <img src="../../images/pic2.png" />
+                <a class="delete-img-btn"></a>
+            </div>
+            <div class="img-item-box">
+                <img src="../../images/pic2.png" />
+                <a class="delete-img-btn"></a>
+            </div>
+            <div class="img-item-box">
+                <img src="../../images/pic2.png" />
+                <a class="delete-img-btn"></a>
+            </div>
+        </div>
+    </div>
+
+    <a class="submit-btn">提交申请</a>
 </body>
+
+<script src="../../lib/zepto/zepto.min.js"></script>
+
+<script>
+    $('.add-img-btn').click(function() {
+        $('.file-input').click();
+    });
+
+    $('.delete-img-btn').click(function() {
+        $(this).closest('.img-item-box').remove();
+    });
+
+    $('.after-saleservice-btn a').click(function() {
+        $('.after-saleservice-btn a').removeClass('active');
+        $(this).addClass('active');
+
+        if ($(this).attr('class').indexOf('back-money-btn') >= 0) {
+            $('.back-goods-input').hide();
+        } else {
+            $('.back-goods-input').show();
+        }
+    });
+</script>
 
 </html>
