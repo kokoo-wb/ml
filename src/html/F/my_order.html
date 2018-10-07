@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1、如果支持Google Chrome Frame：GCF，则使用GCF渲染；2、如果系统安装ie8或以上版本，则使用最高版本ie渲染；3、否则，这个设定可以忽略。 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- 对视窗缩放等级进行限制，使其适应移动端屏幕大小 -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当把这个网页添加到主屏幕时的标题（仅限IOS） -->
+    <meta name="apple-mobile-web-app-title" content="触电-itouchtv">
+    <!-- 添加到主屏幕后全屏显示 -->
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <!--去除safari中number下划线-->
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/F/my_order.css" />
+
+    <title>我的订单</title>
+
+    <script>
+        initScreen();
+        window.onresize = function() {
+            initScreen();
+        }
+
+        function defaultfont() {
+            var sw = document.documentElement.clientWidth;
+            var pw = 750;
+            sw = sw > 750 ? 750 : sw < 320 ? 320 : sw;
+            var f = 100 * sw / pw;
+            document.documentElement.style.fontSize = f + 'px';
+        }
+
+        function initScreen() {
+            defaultfont();
+            setTimeout(function() {
+                defaultfont();
+            }, 100);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../../images/back.png" />
+        <p>我的订单</p>
+    </div>
+    <ul class="order-filter">
+        <li class="active">
+            <a>综合</a>
+        </li>
+        <li>
+            <a>已完成</a>
+        </li>
+        <li>
+            <a>待发货</a>
+        </li>
+        <li>
+            <a>已取消</a>
+        </li>
+        <li>
+            <a>待评价</a>
+        </li>
+        <li>
+            <a>已发货</a>
+        </li>
+    </ul>
+    <ul>
+        <li class="goods-box">
+            <div class="order-no">
+                <span>订单号：20170315150023123456</span>
+                <span>已完成</span>
+            </div>
+            <div class="goods-msg-box">
+                <img src="../../images/pic2.png" />
+                <div class="goods-msg">
+                    <p>商品名称商品名称商品名称商品名称商品名称</p>
+                    <p class="goods-price">
+                        <span>￥59.99</span>
+                    </p>
+                </div>
+            </div>
+            <div class="op-box">
+                <a>删除订单</a>
+                <a>申请售后</a>
+            </div>
+        </li>
+
+        <li class="goods-box">
+            <div class="order-no">
+                <span>订单号：20170315150023123456</span>
+                <span>待发货</span>
+            </div>
+            <div class="goods-msg-box">
+                <img src="../../images/pic2.png" />
+                <div class="goods-msg">
+                    <p>商品名称商品名称商品名称商品名称商品名称</p>
+                    <p class="goods-price">
+                        <span>￥59.99</span>
+                    </p>
+                </div>
+            </div>
+            <div class="op-box">
+                <a>取消订单</a>
+                <a>提醒发货</a>
+                <a>联系客服</a>
+            </div>
+        </li>
+
+        <li class="goods-box">
+            <div class="order-no">
+                <span>订单号：20170315150023123456</span>
+                <span>已取消</span>
+            </div>
+            <div class="goods-msg-box">
+                <img src="../../images/pic2.png" />
+                <div class="goods-msg">
+                    <p>商品名称商品名称商品名称商品名称商品名称</p>
+                    <p class="goods-price">
+                        <span>￥59.99</span>
+                    </p>
+                </div>
+            </div>
+        </li>
+
+        <li class="goods-box">
+            <div class="order-no">
+                <span>订单号：20170315150023123456</span>
+                <span>待评价</span>
+            </div>
+            <div class="goods-msg-box">
+                <img src="../../images/pic2.png" />
+                <div class="goods-msg">
+                    <p>商品名称商品名称商品名称商品名称商品名称</p>
+                    <p class="goods-price">
+                        <span>￥59.99</span>
+                    </p>
+                </div>
+            </div>
+            <div class="op-box">
+                <a>评价</a>
+                <a>申请售后</a>
+            </div>
+        </li>
+
+        <li class="goods-box">
+            <div class="order-no">
+                <span>订单号：20170315150023123456</span>
+                <span>已发货</span>
+            </div>
+            <div class="goods-msg-box">
+                <img src="../../images/pic2.png" />
+                <div class="goods-msg">
+                    <p>商品名称商品名称商品名称商品名称商品名称</p>
+                    <p class="goods-price">
+                        <span>￥59.99</span>
+                    </p>
+                </div>
+            </div>
+            <div class="op-box">
+                <a>查看物流</a>
+            </div>
+        </li>
+
+        <li class="goods-box">
+            <div class="order-no">
+                <span>订单号：20170315150023123456</span>
+                <span>待使用</span>
+            </div>
+            <div class="goods-msg-box">
+                <img src="../../images/pic2.png" />
+                <div class="goods-msg">
+                    <p>商品名称商品名称商品名称商品名称商品名称</p>
+                    <p class="goods-price">
+                        <span>￥59.99</span>
+                    </p>
+                </div>
+            </div>
+            <div class="op-box">
+                <a>取消订单</a>
+            </div>
+        </li>
+
+        <li class="goods-box">
+            <div class="order-no">
+                <span>订单号：20170315150023123456</span>
+                <span>售后审核中</span>
+            </div>
+            <div class="goods-msg-box">
+                <img src="../../images/pic2.png" />
+                <div class="goods-msg">
+                    <p>商品名称商品名称商品名称商品名称商品名称</p>
+                    <p class="goods-price">
+                        <span>￥59.99</span>
+                    </p>
+                </div>
+            </div>
+        </li>
+
+        <li class="goods-box">
+            <div class="order-no">
+                <span>订单号：20170315150023123456</span>
+                <span>已完成</span>
+            </div>
+            <div class="goods-msg-box">
+                <img src="../../images/pic2.png" />
+                <div class="goods-msg">
+                    <p>商品名称商品名称商品名称商品名称商品名称</p>
+                    <p class="goods-price">
+                        <span>￥59.99</span>
+                    </p>
+                </div>
+            </div>
+            <div class="op-box">
+                <a>删除订单</a>
+            </div>
+        </li>
+
+        <li class="goods-box">
+            <div class="order-no">
+                <span>订单号：20170315150023123456</span>
+                <span>审核通过</span>
+            </div>
+            <div class="goods-msg-box">
+                <img src="../../images/pic2.png" />
+                <div class="goods-msg">
+                    <p>商品名称商品名称商品名称商品名称商品名称</p>
+                    <p class="goods-price">
+                        <span>￥59.99</span>
+                    </p>
+                </div>
+            </div>
+        </li>
+
+        <li class="goods-box">
+            <div class="order-no">
+                <span>订单号：20170315150023123456</span>
+                <span>审核不通过</span>
+            </div>
+            <div class="goods-msg-box">
+                <img src="../../images/pic2.png" />
+                <div class="goods-msg">
+                    <p>商品名称商品名称商品名称商品名称商品名称</p>
+                    <p class="goods-price">
+                        <span>￥59.99</span>
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</body>
+<script src="../../lib/zepto/zepto.min.js"></script>
+
+<script>
+    $('.order-filter li').click(function() {
+        $('.order-filter li').removeClass('active');
+        $(this).addClass('active');
+    });
+</script>
+
+</html>

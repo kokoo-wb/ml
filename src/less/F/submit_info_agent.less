@@ -1,0 +1,206 @@
+body, html {
+    background: #f7f7f7;
+}
+
+.header {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    position: relative;
+    background: #fff;
+
+    img {
+        width: 0.44rem;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.label-box {
+    height: 1rem;
+    display: flex;
+    align-items: center;
+
+    .apply-label {
+        height: 1.12rem;
+        position: relative;
+        font-size: 0.32rem;
+        padding: 0 0.22rem;
+        background: #edf2f7;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        border-left: 0.1rem solid #5598ff;
+        font-size: 0.26rem;
+        color: #358cf6;
+        display: inline-block;
+    }
+}
+
+.input-box {
+    background: #fff;
+    border-top: 0.02rem solid #e8e8e8;
+
+    .date-input-item {
+        ::-webkit-input-placeholder {
+            color: #333;
+        }
+    }
+
+    .input-item {
+        height: 1rem;
+        display: flex;
+        padding: 0 0.4rem;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 0.02rem solid #e8e8e8;
+        position: relative;
+
+        label {
+            font-size: 0.28rem;
+        }
+
+        input {
+            width: 4.5rem;
+            font-size: 0.28rem;
+            border: 0;
+            outline: none;            
+        }
+        textarea {
+            width: 4.5rem;
+            font-size: 0.28rem;
+            border: 0;
+            outline: none;
+            resize: none;
+        }
+
+        .right-arrow {
+            width: 0.28rem;
+            height: 0.28rem;
+            position: absolute;
+            right: 0.3rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .text-input {
+        align-items: inherit;
+        padding: 0.3rem 0.4rem;
+    }
+}
+
+
+.add-file-box {
+    background: #fff;
+    padding: 0.4rem 0.4rem 0.2rem 0.4rem;
+    border-top: 0.02rem solid #e8e8e8;
+
+    .upload-box-label {
+        width: 100%;
+        font-size: 0.28rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .add-img-box {        
+        display: flex;
+        flex-wrap: wrap;      
+        
+        .add-img-item {
+            width: 3.2rem;
+            height: 1.84rem;
+            margin-bottom: 0.2rem;
+            margin-right: 0.3rem;
+            .add-img-btn {
+                width: 3.2rem;
+                height: 1.84rem;
+                display: flex;
+                justify-content: center;
+                box-sizing: border-box;
+                padding-top: 0.7rem;
+                color: #666;
+                font-size: 0.24rem;
+                align-items: center;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                background-image: url('../../images/f7_ic_add@2x.png');  
+            }
+            
+            img {
+                width: 3.2rem;
+                height: 1.84rem;
+                display: none;
+            }
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+
+            .file-input {
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+        }        
+
+        .img-item-box {
+            width: 1.16rem;
+            height: 1.16rem;
+            margin-right: 0.3rem;
+            position: relative;
+            margin-bottom: 0.2rem;
+
+            & > img {
+                width: 1.16rem;
+                height: 1.16rem;
+                border-radius: 0.05rem;
+            }
+        }
+    }
+}
+
+.agreement-box {
+    height: 0.9rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    background: #fff;
+    border-top: 0.02rem solid #e8e8e8;
+    border-bottom: 0.02rem solid #e8e8e8;
+    padding: 0 0.4rem;
+    font-size: 0.26rem;
+    color: #666;
+
+    a {
+        height: 0.36rem;
+        width: 0.36rem;
+        display: block;
+        background-size: 100% 100%;
+        background-image: url('../../images/fi_icon_round@2x.png');
+        background-repeat: no-repeat;
+        margin-right: 0.2rem;
+
+        &.active {
+            background-image: url('../../images/fi_icon_round_s@2x.png');
+        }
+    }
+}
+
+
+.apply-btn {
+    width: 7.5rem;
+    height: 0.9rem;
+    display: block;
+    background: #5598ff;
+    color: #fff;
+    text-align: center;
+    line-height: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.34rem;
+}
+

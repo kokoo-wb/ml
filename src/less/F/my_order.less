@@ -1,0 +1,203 @@
+body, html {
+    background: #f7f7f7;
+}
+
+.header {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    position: relative;
+    background: #fff;
+
+    img {
+        width: 0.44rem;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.order-filter {
+    background: #fff;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 1rem;
+    overflow-x: auto;
+    box-sizing: border-box;
+    padding: 0 0.3rem;
+
+    li {
+        font-size: 0.32rem;
+        color: #666;
+        margin-right: 0.5rem;
+
+        &:last-child {
+            padding-right: 0.3rem;
+        }
+
+        a {
+            text-align: center;
+            min-width: 1.1rem;
+            display: block;
+        }
+
+        &.active {
+            position: relative;
+            top: 0.02rem;
+            a {
+                font-size: 0.36rem;
+                color: #57aaff;
+            }
+
+            &::before {
+                content: ' ';
+                display: block;
+                position: absolute;
+                width: 0.5rem;
+                height: 0.04rem;
+                background: #57aaff;
+                bottom: -0.1rem;
+                border-radius: 0.1rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }        
+    }
+}
+
+.goods-box {      
+    margin-bottom: 0.3rem;
+    background: #fff;
+
+    .order-no {
+        height: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0.3rem;
+        border-bottom: 0.02rem solid #e8e8e8;
+
+        span:last-child {
+            color: #f63535;
+        }
+    } 
+    
+    .op-box {
+        display: flex;
+        height: 1rem;
+        flex-direction: row-reverse;
+        align-items: center;
+        border-top: 0.02rem solid #e8e8e8;
+        padding: 0 0.3rem;
+
+        a {
+            height: 0.52rem;
+            width: 1.42rem;
+            color: #358cf6;
+            border: 0.02rem solid #358cf6;
+            display: block;
+            font-size: 0.28rem;
+            text-align: center;
+            line-height: 0.52rem;
+            margin-left: 0.2rem;
+            border-radius: 0.04rem;
+
+            &:first-child {
+                color: #fff;
+                background: #358cf6;
+            }
+        }
+    }
+
+    .goods-msg-box {
+        padding: 0 0.47rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 2.3rem;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 0.06rem;
+        }
+
+        .goods-msg {
+            height: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 0.2rem;
+
+            .goods-price {
+                color: #ff2b2b;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                font-size: 0.28rem;
+
+                span:last-child {
+                    color: #666;
+                    font-size: 0.26rem;
+                }
+            }
+        }
+    }
+}    
+
+.order-detail-list {
+    background: #fff;
+    padding: 0.5rem 0.25rem 0.2rem 0.25rem;
+    margin-bottom: 0.3rem;
+
+    li {
+        background: #f5f5f5;
+        width: 7rem;
+        height: 0.66rem;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 0.3rem;
+        margin-bottom: 0.3rem;
+        border-radius: 0.06rem;
+
+        &.img-list-box {
+            padding: 0.2rem 0.3rem;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            box-sizing: border-box;
+            height: auto;
+
+            .img-list {
+                margin-top: 0.3rem;
+                img {
+                    width: 1.16rem;
+                    height: 1.16rem;
+                    border-radius: 0.06rem;
+                    margin-right: 0.2rem;
+                    margin-bottom: 0.2rem;
+                }
+            }
+            
+        }
+    }
+}
+
+.delete-btn {
+    width: 6rem;
+    height: 0.9rem;
+    display: block;
+    background: #5598ff;
+    color: #fff;
+    margin: 1rem auto;
+    text-align: center;
+    line-height: 0.9rem;
+    border-radius: 0.08rem;
+}
+

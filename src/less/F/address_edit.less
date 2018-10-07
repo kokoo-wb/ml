@@ -1,0 +1,76 @@
+body, html {
+    background: #f7f7f7;
+}
+
+.header {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    position: relative;
+    background: #fff;
+
+    img {
+        width: 0.44rem;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+.input-box {
+    background: #fff;
+
+    .select-input-item {
+        ::-webkit-input-placeholder {
+            color: #333;
+        }
+    }
+
+    .input-item {
+        height: 1rem;
+        display: flex;
+        padding: 0 0.4rem;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 0.02rem solid #e8e8e8;
+        position: relative;
+
+        label {
+            font-size: 0.28rem;
+        }
+
+        input {
+            width: 4.5rem;
+            font-size: 0.28rem;
+            border: 0;
+            outline: none;            
+        }
+        textarea {
+            width: 4.5rem;
+            font-size: 0.28rem;
+            border: 0;
+            outline: none;
+            resize: none;
+        }
+
+        .right-arrow {
+            width: 0.28rem;
+            height: 0.28rem;
+            position: absolute;
+            right: 0.3rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .text-input {
+        align-items: inherit;
+        padding: 0.3rem 0.4rem;
+    }
+}
+

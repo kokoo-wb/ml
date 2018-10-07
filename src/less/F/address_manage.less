@@ -1,0 +1,108 @@
+body, html {
+    background: #f7f7f7;
+}
+
+.header {
+    height: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.36rem;
+    border-bottom: 0.02rem solid #e8e8e8;
+    position: relative;
+    background: #fff;
+
+    img {
+        width: 0.44rem;
+        position: absolute;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.address-list {
+    margin-bottom: 1rem;
+    li {
+        background: #fff;
+        margin-bottom: 0.2rem;
+        .contact-user {
+            display: flex;
+            height: 0.96rem;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0.4rem;
+            color: #363c40;
+            font-size: 0.32rem;
+        }
+
+        .address-detail {
+            color: #8e8e8e;
+            font-size: 0.26rem;
+            padding: 0 0.1rem;
+            padding-bottom: 0.28rem;
+            margin: 0 0.3rem;
+            border-bottom: 0.02rem solid #e8e8e8;
+        }
+
+        .address-op-box {
+            height: 0.72rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0.4rem;
+            font-size: 0.28rem;
+
+            .set-default {
+                display: flex;
+                align-items: center;
+                line-height: 1em;
+
+                a {
+                    height: 0.32rem;
+                    width: 0.32rem;
+                    display: block;
+                    background-size: 100% 100%;
+                    background-image: url('../../images/f9_ic_box@2x.png');
+                    background-repeat: no-repeat;
+                    margin-right: 0.2rem;
+
+                    &.active {
+                        background-image: url('../../images/f9_ic_box_b@2x.png');
+                    }
+                }
+            }
+
+            .address-op {
+                display: flex;
+                align-items: center;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 0.15rem;
+                    line-height: 1em;
+
+                    img {
+                        height: 0.32rem;
+                        width: 0.32rem;
+                        margin-right: 0.05rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.add-btn {
+    width: 7.5rem;
+    height: 0.9rem;
+    display: block;
+    background: #5598ff;
+    color: #fff;
+    text-align: center;
+    line-height: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.34rem;
+}
