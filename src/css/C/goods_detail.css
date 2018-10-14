@@ -393,9 +393,10 @@ html {
   height: 0.4rem;
 }
 .choose-type-modal .choose-type-content .goods-args {
-  padding: 0.4rem 0.3rem;
+  padding: 0.4rem 0;
 }
 .choose-type-modal .choose-type-content .goods-args .goods-msg {
+  padding: 0 0.3rem;
   height: 1.5rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -441,13 +442,23 @@ html {
   color: #666;
   font-size: 0.26rem;
 }
-.choose-type-modal .choose-type-content .goods-args .item-box {
-  margin-top: 0.5rem;
+.choose-type-modal .choose-type-content .goods-args .props-choose {
+  height: 5.97rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 0.2rem;
+  padding: 0.2rem 0.3rem 0.5rem 0.3rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.choose-type-modal .choose-type-content .goods-args .item-box span {
+.choose-type-modal .choose-type-content .goods-args .props-choose .item-box {
+  margin-top: 0.3rem;
+}
+.choose-type-modal .choose-type-content .goods-args .props-choose .item-box span {
   font-size: 0.28rem;
 }
-.choose-type-modal .choose-type-content .goods-args .item-box ul {
+.choose-type-modal .choose-type-content .goods-args .props-choose .item-box ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -458,7 +469,7 @@ html {
           flex-wrap: wrap;
   margin-top: 0.3rem;
 }
-.choose-type-modal .choose-type-content .goods-args .item-box ul li {
+.choose-type-modal .choose-type-content .goods-args .props-choose .item-box ul li {
   width: 1.4rem;
   height: 0.8rem;
   color: #999;
@@ -469,14 +480,14 @@ html {
   border-radius: 0.08rem;
   margin-right: 0.4rem;
 }
-.choose-type-modal .choose-type-content .goods-args .item-box ul li.active {
+.choose-type-modal .choose-type-content .goods-args .props-choose .item-box ul li.active {
   color: #fff;
   background: #5598ff;
 }
-.choose-type-modal .choose-type-content .goods-args .item-box ul li:nth-child(4n) {
+.choose-type-modal .choose-type-content .goods-args .props-choose .item-box ul li:nth-child(4n) {
   margin-right: 0;
 }
-.choose-type-modal .choose-type-content .goods-args .item-box .choose-num {
+.choose-type-modal .choose-type-content .goods-args .props-choose .item-box .choose-num {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -489,11 +500,11 @@ html {
           align-items: center;
   margin-top: 0.3rem;
 }
-.choose-type-modal .choose-type-content .goods-args .item-box .choose-num a img {
+.choose-type-modal .choose-type-content .goods-args .props-choose .item-box .choose-num a img {
   width: 0.8rem;
   height: 0.8rem;
 }
-.choose-type-modal .choose-type-content .goods-args .item-box .choose-num input {
+.choose-type-modal .choose-type-content .goods-args .props-choose .item-box .choose-num input {
   width: 1.6rem;
   height: 0.8rem;
   border: 0.03rem solid #ccc;

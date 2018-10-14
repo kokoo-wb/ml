@@ -123,6 +123,28 @@
             </div>
         </li>
     </ul>
+
+
+    <ul class="footer-bar">
+        <li class="active">
+            <a>
+                <img class="footer-icon" src="../../images/table_ic_01@2x.png" />
+                <p>联系客服</p>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img class="footer-icon" src="../../images/table_ic_02@2x.png" />
+                <p>商品分类</p>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img class="footer-icon" src="../../images/table_ic_03@2x.png" />
+                <p>领取优惠券</p>
+            </a>
+        </li>
+    </ul>
 </body>
 
 <script src="../../lib/zepto/zepto.min.js"></script>
@@ -137,7 +159,7 @@
     $('.save-btn').click(function() {
         if ($('.save-btn').attr('data') == '0') {
             $('.save-btn').addClass('save-btn-active').attr('data', 1);
-            commonPlugins.messageModal('收藏成功');
+            commonPlugins.messageModal('<div class="modal-success"><img src="../../images/d3_ic_ok@2x.png" /><p>修改成功</p><div>');
         } else {
             $('.save-btn').removeClass('save-btn-active').attr('data', 0);
         }
