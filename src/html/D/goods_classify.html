@@ -51,12 +51,12 @@
 
     <div class="all-goods">
         <span>全部商品</span>
-        <img class="show-password" src="../../images/b3_icon_arrow@2x.png" />
+        <img class="arrow-ico" src="../../images/b3_icon_arrow@2x.png" />
     </div>
 
     <div class="goods-classify">
         <ul class="first-classify">
-            <li>一级分类</li>
+            <li class="active">一级分类</li>
             <li>一级分类</li>
             <li>一级分类</li>
             <li>一级分类</li>
@@ -119,18 +119,9 @@
 <script src="../../js/common.js"></script>
 
 <script>
-    $('.show-password').click(function() {
-        if ($('.pass-input').attr('data') == '0') {
-            $('.pass-input').attr('type', 'text').attr('data', '1');
-            $(this).attr('src', '../../images/a4_ic_eye_s@2x.png');
-        } else {
-            $('.pass-input').attr('type', 'password').attr('data', '0');
-            $(this).attr('src', '../../images/a4_ic_eye@2x.png');
-        }
-    });
-
-    $('.finish-btn').click(function() {
-        commonPlugins.messageModal('请输入正确的密码');
+    $('.first-classify li').click(function() {
+        $('.first-classify li').removeClass('active');
+        $(this).addClass('active');
     });
 </script>
 

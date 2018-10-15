@@ -65,6 +65,25 @@
 <script src=" ../../js/common.js "></script>
 
 <script>
+    var turnArr = [{
+        name: '50元红包'
+    }, {
+        name: '20元红包'
+    }, {
+        name: '10元红包'
+    }, {
+        name: '0.5%加息劵'
+    }, {
+        name: '小米蓝牙耳机'
+    }, {
+        name: '谢谢参与'
+    }, {
+        name: '谢谢参与1'
+    }, {
+        name: '谢谢参与2'
+    }];
+
+
     /**
      * [转盘旋转]
      * @param [number] times [旋转次数]
@@ -89,7 +108,7 @@
 
             if (num == 0) {
                 clearInterval(rota);
-                reword(parseInt(degree));
+                reword(parseInt(degree), turnArr);
                 callback();
             }
         }, 1);
@@ -100,7 +119,7 @@
      * [转盘旋转]
      * @param [number] degree [每次旋转结束的度数]
      */
-    function reword(degree) {
+    function reword(degree, arr) {
         var title = '';
 
         if (degree % 45 == 0) {
@@ -111,35 +130,28 @@
             }
         }
 
-        if (degree > 0 && degree < 60) {
-            title = '50元红包';
-        } else if (degree > 60 && degree < 120) {
-            title = '20元红包';
-        } else if (degree > 120 && degree < 180) {
-            title = '10元红包';
-        } else if (degree > 180 && degree < 240) {
-            title = '0.5%加息劵';
-        } else if (degree > 240 && degree < 300) {
-            title = '小米蓝牙耳机';
-        } else if (degree > 300 && degree < 360) {
-            title = '谢谢参与';
-        }
-
         $('.rota-img').css({
             'transform': 'rotate(' + degree + 'deg)'
         });
 
-        commonPlugins.confrimModal({
-            title: '恭喜你开出' + title,
-            confirmName: '查看',
-            cancelName: '取消',
-            onOk: function() {
-                commonPlugins.closeConfirmModal();
-            },
-            onCancel: function() {
-                commonPlugins.closeConfirmModal();
-            }
-        });
+
+        if (arr.length) {
+            var temp = 360 / arr.length;
+            var index = parseInt(degree / temp);
+            var title = arr[index].name;
+
+            commonPlugins.confrimModal({
+                title: '恭喜你开出' + title,
+                confirmName: '查看',
+                cancelName: '取消',
+                onOk: function() {
+                    commonPlugins.closeConfirmModal();
+                },
+                onCancel: function() {
+                    commonPlugins.closeConfirmModal();
+                }
+            });
+        }
     }
 
 
