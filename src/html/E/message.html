@@ -75,6 +75,7 @@
                 </div>
                 <p class="message-desc">[语音]</p>
             </div>
+            <a class="delete-btn">删除</a>
         </li>
         <li>
             <img src="../../images/pic2.png" />
@@ -85,6 +86,7 @@
                 </div>
                 <p class="message-desc">你好，可以交个朋友吗？</p>
             </div>
+            <a class="delete-btn">删除</a>
         </li>
         <li>
             <img src="../../images/pic2.png" />
@@ -95,6 +97,40 @@
                 </div>
                 <p class="message-desc">你好，可以交个朋友吗？</p>
             </div>
+            <a class="delete-btn">删除</a>
+        </li>
+        <li>
+            <img src="../../images/pic2.png" />
+            <div class="message-content">
+                <div class="message-title">
+                    <p>莉迪亚</p>
+                    <span class="time">11:39</span>
+                </div>
+                <p class="message-desc">你好，可以交个朋友吗？</p>
+            </div>
+            <a class="delete-btn">删除</a>
+        </li>
+        <li>
+            <img src="../../images/pic2.png" />
+            <div class="message-content">
+                <div class="message-title">
+                    <p>莉迪亚</p>
+                    <span class="time">11:39</span>
+                </div>
+                <p class="message-desc">你好，可以交个朋友吗？</p>
+            </div>
+            <a class="delete-btn">删除</a>
+        </li>
+        <li>
+            <img src="../../images/pic2.png" />
+            <div class="message-content">
+                <div class="message-title">
+                    <p>莉迪亚</p>
+                    <span class="time">11:39</span>
+                </div>
+                <p class="message-desc">你好，可以交个朋友吗？</p>
+            </div>
+            <a class="delete-btn">删除</a>
         </li>
     </ul>
 
@@ -132,6 +168,7 @@
     </ul>
 </body>
 <script src="../../lib/zepto/zepto.min.js"></script>
+<script src="../../lib/zepto/zepto-swiper.js"></script>
 
 <script>
     $('.footer-bar li').click(function() {
@@ -139,33 +176,9 @@
         $(this).addClass('active');
     });
 
-    var messageArr = document.querySelectorAll('.message-list li');
-    var sreenWidthRate = $(window).width() / 7.5;
-
-    for (var i = 0; i < messageArr.length; i++) {
-        var start = 0;
-        var moveing = 0;
-        var end = 0;
-        messageArr[i].addEventListener('touchstart', function(e) {
-            console.log('start:', e);
-            start = e.changedTouches[0].pageX;
-            moveing = e.changedTouches[0].pageX;
-            end = e.changedTouches[0].pageX;
-        }, false);
-
-        messageArr[i].addEventListener('touchmove', function(e) {
-            moveing = e.changedTouches[0].pageX;
-            var movingDistance = moveing - start
-            console.log(movingDistance, movingDistance / sreenWidthRate + 'rem', messageArr[i]);
-        }, false);
-
-        messageArr[i].addEventListener('touchend', function(e) {
-            console.log('end:', e);
-            end = e.changedTouches[0].pageX;
-
-            console.log(start, moveing, end)
-        }, false);
-    }
+    $('.message-list li').touchWipe({
+        itemDelete: '.delete-btn'
+    });
 </script>
 
 </html>
