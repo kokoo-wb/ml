@@ -1,0 +1,123 @@
+.header {
+  height: 0.9rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.36rem;
+  position: relative;
+  border-bottom: 0.02rem solid #f1f1f1;
+  z-index: 1000;
+}
+.header img {
+  width: 0.44rem;
+  position: absolute;
+  left: 0.3rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.map-box {
+  position: absolute;
+  top: 0.9rem;
+  bottom: 0;
+  width: 7.5rem;
+}
+.search-box {
+  height: 0.9rem;
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 0.9rem;
+  z-index: 999;
+  width: 7.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0.3rem;
+  color: #565656;
+}
+.search-box img {
+  height: 0.48rem;
+  width: 0.48rem;
+  margin-left: 0.1rem;
+}
+.search-box input {
+  width: 5.68rem;
+  height: 0.9rem;
+  border: 0;
+  outline: none;
+  padding: 0 0.2rem;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0.3rem;
+}
+.search-box .cancel-btn {
+  display: none;
+}
+.location-list {
+  height: 5.2rem;
+  background: #fff;
+  position: absolute;
+  bottom: 0rem;
+  z-index: 1000;
+  width: 7.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+}
+.location-list li {
+  border-bottom: 0.02rem solid #e8e8e8;
+  height: 1.4rem;
+  width: 7.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0.2rem;
+  padding: 0 0.1rem;
+}
+.location-list li:last-child {
+  border: 0;
+}
+.location-list li img {
+  height: 0.56rem;
+  width: 0.56rem;
+}
+.location-list li .location-item-msg {
+  margin-left: 0.3rem;
+  line-height: 1em;
+}
+.location-list li .location-item-msg p:first-child {
+  font-size: 0.32rem;
+}
+.location-list li .location-item-msg p:last-child {
+  color: #9c9a9a;
+  font-size: 0.26rem;
+  margin-top: 0.13rem;
+}
